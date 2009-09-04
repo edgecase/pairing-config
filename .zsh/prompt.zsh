@@ -2,12 +2,6 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\/git:\1/'
 }
 
-#parse_git_pair() {
-#  if [[ parse_git_branch == "" ]]; then
-#    git config --get user.name
-#  fi
-#}
- 
 # Put the string "hostname::/full/directory/path" in the title bar:
 set_term_title() { 
 	echo -ne "\e]2;$PWD\a" 
