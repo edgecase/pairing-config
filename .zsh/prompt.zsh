@@ -1,7 +1,3 @@
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\/git:\1/'
-}
-
 # Put the string "hostname::/full/directory/path" in the title bar:
 set_term_title() { 
 	echo -ne "\e]2;$PWD\a" 
@@ -19,6 +15,7 @@ set_running_app() {
 precmd() { 
 	set_term_title
 	set_term_tab
+  set_prompt
 }
 
 preexec() { 
@@ -28,5 +25,3 @@ preexec() {
 postexec() {
   set_running_app
 }
-
-export PS1='%{$reset_color$fg[gray]%}%1~%{$reset_color$bold_color$fg[green]%}%{$reset_color$fg[green]%}$(parse_git_branch)>%{$reset_color%} ' 
