@@ -18,6 +18,20 @@ function is_working_directory_dirty() {
  fi
 }
 
+function unpushed() {
+  git cherry -v origin/$(git_branch_name) 2>/dev/null
+}
+
+function need_push () {
+  if [[ $(unpushed) == "" ]]
+  then
+    echo " "
+  else
+    echo "%{\e[0;33m%}↑%{\e[0m%}"
+  fi
+}
+
+
 function gitdays {
   git log --author=Pairing --reverse --since="$@ days ago" --pretty="format:%n%Cgreen%cd%n%n%s%n%b%n---------------------------------------------" 
 }
@@ -42,6 +56,6 @@ function set_prompt() {
   branch_name=$(git_branch_name)
   if [ -n "$branch_name" ]; then
     export PS1='%1~%{$reset_color$bold_color$fg[green]%}%{$reset_color$fg[green]%} ($branch_name)%{$reset_color%} ~ '
-    export RPS1="%{$fg[yellow]%}$(is_working_directory_dirty)%{$reset_color%}"
+    export RPS1="%{$fg[yellow]%}$(is_working_directory_dirty)$(need_push)%{$reset_color%}"
   fi
 }
