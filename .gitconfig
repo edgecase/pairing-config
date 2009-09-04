@@ -1,0 +1,39 @@
+[user]
+  name = Pairing Machine
+  email = contact@edgecase.com
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[merge]
+  tool = opendiff
+[core]
+  legacyheaders = false
+[repack]
+  usedeltabaseoffset = true
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+  ch = cherry -v origin
+  mine = log --author=Pairing
+[github]
+  user = pairing
+  token = 35647376b5bad04b2c078f1e2164bcb6
+[diff "ruby"]
+  funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
+[push]
+  default = matching
