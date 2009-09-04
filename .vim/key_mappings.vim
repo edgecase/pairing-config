@@ -37,12 +37,12 @@
   nmap gO O<esc>
 
 " scroll up/down one line at a time
-  nmap <Up> 
-  nmap <Down> 
+" nmap <Up> 
+" nmap <Down> 
 
 " scroll left/right
-  nmap <Left> zh
-  nmap <Right> zl
+" nmap <Left> zh
+" nmap <Right> zl
 
 " Fuzzy Finder - go to launch; gb just for buffers; cmd-enter to open selected file in new tab
   let g:FuzzyFinderOptions = { 'Base':{} }
