@@ -7,7 +7,7 @@ function pushed() {
 }
 
 function git_branch_name() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\/git:\1/'
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
 
 function is_working_directory_dirty() {
@@ -37,10 +37,11 @@ function md {
 }
 
 function set_prompt() {
-  export PS1='%{$reset_color$fg[gray]%}%1~%{$reset_color$bold_color$fg[green]%}%{$reset_color$fg[green]%}$(git_branch_name)>%{$reset_color%} '   
+  export PS1='%2/ ~ '
 
   branch_name=$(git_branch_name)
   if [ -n "$branch_name" ]; then
+    export PS1='%1~%{$reset_color$bold_color$fg[green]%}%{$reset_color$fg[green]%} ($branch_name)%{$reset_color%} ~ '
     export RPS1="%{$fg[yellow]%}$(is_working_directory_dirty)%{$reset_color%}"
   fi
 }
