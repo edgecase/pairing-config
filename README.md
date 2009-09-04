@@ -7,3 +7,5 @@ The following rake tasks will set up symbolic links in your home directory for e
 or 
 
     rake symlink:force
+
+Emacs: http://github.com/jimweirich/emacs-setup/tree/master
