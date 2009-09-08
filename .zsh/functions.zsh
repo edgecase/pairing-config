@@ -70,3 +70,10 @@ function push_configs() {
   git commit -a && git push
   popd
 }
+
+function pull_configs() {
+  pushd
+  cd ~/projects/config
+  git pull
+  popd
+}
