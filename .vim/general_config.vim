@@ -12,6 +12,9 @@
 " Highlight matching parens
   set showmatch
   set completeopt=menu,preview
+
+" Set six-line offset at top and bottom to see upcoming text
+  set scrolloff=6
   
 " Use the tab complete menu
   set wildmenu 
