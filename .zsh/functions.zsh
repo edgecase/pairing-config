@@ -61,5 +61,12 @@ function set_prompt() {
 }
 
 function railstags() {
-  rtags --vi -a -f tags -R app -R lib -R script
+  rtags --vi -a -f tags -R app -R lib -R script -R spec
+}
+
+function push_configs() {
+  pushd
+  cd ~/projects/config
+  git commit -a && git push
+  popd
 }

@@ -4,6 +4,7 @@ export PATH=$PATH:~/Library/bin:/Applications/jruby-1.3.1/bin
 
 export CDPATH=:~/projects
 export RUBYOPT='rubygems -Itest'
+export GIT_EDITOR="vim"
 export EDITOR="mvim"
 export JAVA_HOME='/System/Library/Frameworks/JavaVM.framework/Home'
 export TERM=xterm-color
