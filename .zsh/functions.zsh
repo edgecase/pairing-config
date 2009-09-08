@@ -59,3 +59,7 @@ function set_prompt() {
     export RPS1="%{$fg[magenta]%}$(is_working_directory_dirty)%{$fg[yellow]%}$(need_push)%{$reset_color%}"
   fi
 }
+
+function railstags() {
+  rtags --vi -a -f tags -R app -R lib -R script
+}
