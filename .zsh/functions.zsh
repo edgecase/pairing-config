@@ -56,6 +56,6 @@ function set_prompt() {
   branch_name=$(git_branch_name)
   if [ -n "$branch_name" ]; then
     export PS1='%1~%{$reset_color$bold_color$fg[green]%}%{$reset_color$fg[green]%} ($branch_name)%{$reset_color%} ~ '
-    export RPS1="%{$fg[yellow]%}$(is_working_directory_dirty)$(need_push)%{$reset_color%}"
+    export RPS1="%{$fg[magenta]%}$(is_working_directory_dirty)%{$fg[yellow]%}$(need_push)%{$reset_color%}"
   fi
 }
