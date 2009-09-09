@@ -77,3 +77,7 @@ function pull_configs() {
   git pull
   popd
 }
+
+function vack() {
+  ack -l $* | xargs mvim -p
+}
