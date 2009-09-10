@@ -220,6 +220,7 @@ call TCommentDefineType('xslt',             '<!-- %s -->'      )
 call TCommentDefineType('xslt_inline',      g:tcommentInlineXML)
 call TCommentDefineType('xslt_block',       g:tcommentBlockXML )
 call TCommentDefineType('yaml',             '# %s'             )
+call TCommentDefineType('zsh',              '# %s'             )
 
 
 " :line1,line2 TCommentAs commenttype
