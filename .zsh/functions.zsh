@@ -81,3 +81,8 @@ function pull_configs() {
 function vack() {
   ack -l $* | xargs mvim -p
 }
+
+function reload! {
+  echo Restarting Passenger...
+  touch tmp/restart.txt
+}
