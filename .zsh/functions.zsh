@@ -67,7 +67,7 @@ function railstags() {
 function push_configs() {
   pushd
   cd ~/projects/config
-  git commit -a && git push
+  git add . && git commit -a && git push
   popd
 }
 
