@@ -7,4 +7,4 @@
   syntax on
   
 " terminal-compatible colorscheme
-  colors ir_black
+  colors twilight

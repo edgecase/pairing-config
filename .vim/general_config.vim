@@ -65,3 +65,7 @@
   set statusline+=%= " right align
   set statusline+=%-14.(%l,%c%V%)\ %<%P " offset
 
+
+" crosshairs
+  set cursorcolumn
+  set cursorline
