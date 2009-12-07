@@ -1,9 +1,9 @@
 require 'rubygems'
-require 'wirble'
-
-Wirble.init
-Wirble.colorize
-
+# require 'wirble'
+# 
+# Wirble.init
+# Wirble.colorize
+# 
 alias q exit
 
 IRB.conf[:PROMPT_MODE] = :SIMPLE
