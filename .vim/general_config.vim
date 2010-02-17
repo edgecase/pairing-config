@@ -69,3 +69,6 @@
 " crosshairs
   set cursorcolumn
   set cursorline
+
+
+

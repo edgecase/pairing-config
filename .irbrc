@@ -26,6 +26,26 @@ class Object
   end
 end
 
+# Setup permanent history.
+HISTFILE = "~/.irb_history"
+MAXHISTSIZE = 500
+begin
+  histfile = File::expand_path(HISTFILE)
+  if File::exists?(histfile)
+    lines = IO::readlines(histfile).collect { |line| line.chomp }
+    puts "Read #{lines.nitems} saved history commands from '#{histfile}'." if $VERBOSE
+    Readline::HISTORY.push(*lines)
+  else
+    puts "History file '#{histfile}' was empty or non-existant." if $VERBOSE
+  end
+  Kernel::at_exit do
+    lines = Readline::HISTORY.to_a.reverse.uniq.reverse
+    lines = lines[-MAXHISTSIZE, MAXHISTSIZE] if lines.nitems > MAXHISTSIZE
+    puts "Saving #{lines.length} history lines to '#{histfile}'." if $VERBOSE
+    File::open(histfile, File::WRONLY|File::CREAT|File::TRUNC) { |io| io.puts lines.join("\n") }
+  end
+end
+
 
 ######### RAILS ONLY
 
@@ -34,3 +54,19 @@ if $0 == 'irb' && ENV['RAILS_ENV']
   Object.const_set(:RAILS_DEFAULT_LOGGER, Logger.new(STDOUT))
 end
 
+
+def method_missing method, *args, &block
+  if method.to_s =~ /l+a+m+e+/i
+    `say lame #{args.join(' ')}`
+  else
+    super
+  end
+  nil
+end
+
+def Object.const_missing const
+  if const.to_s =~ /l+a+m+e+/i
+    `say lame`
+  end
+  super
+end

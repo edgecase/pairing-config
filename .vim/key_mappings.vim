@@ -5,12 +5,10 @@
   nmap U :redo<cr>
 
 " easy wrap toggling
-  nmap <Leader>w :set wrap<cr>
+  nmap <Leader>w :set wrap!<cr>
   nmap <Leader>W :set nowrap<cr>
 
 " switch windows
-  nmap gj j
-  nmap gk k
   nmap gh h
   nmap gl l
 

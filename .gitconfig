@@ -37,3 +37,5 @@
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
 [push]
   default = matching
+[git-pair "authors"]
+	lg = Leon Gersing <fallenrogue@gmail.com>

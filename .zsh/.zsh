@@ -1,0 +1,1 @@
+/Users/minithree/projects/config/.zsh
