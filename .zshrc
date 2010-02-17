@@ -11,7 +11,6 @@ source ~/.zsh/aliases.zsh
 source ~/.zsh/bindkeys.zsh
 source ~/.zsh/prompt.zsh
 
-if [[ -s /Users/Shared/.rvm/scripts/rvm ]] ; then source /Users/Shared/.rvm/scripts/rvm ; fi
-
 # so I know what ruby I'm in (diplomas needs system ruby)
 ruby -v
+if [[ -s /Users/pairone/.rvm/scripts/rvm ]] ; then source /Users/pairone/.rvm/scripts/rvm ; fi
