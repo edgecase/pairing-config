@@ -10,5 +10,3 @@ export JAVA_HOME='/System/Library/Frameworks/JavaVM.framework/Home'
 export TERM=xterm-color
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
-
-umask -S g=rwx
