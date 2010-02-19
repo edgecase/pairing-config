@@ -11,6 +11,4 @@ source ~/.zsh/aliases.zsh
 source ~/.zsh/bindkeys.zsh
 source ~/.zsh/prompt.zsh
 
-# so I know what ruby I'm in (diplomas needs system ruby)
-ruby -v
-if [[ -s /Users/pairone/.rvm/scripts/rvm ]] ; then source /Users/pairone/.rvm/scripts/rvm ; fi
+if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
