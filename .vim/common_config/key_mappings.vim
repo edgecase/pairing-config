@@ -9,8 +9,7 @@
   nmap <Leader>W :set nowrap<cr>
 
 " switch windows
-  nmap gh h
-  nmap gl l
+  nmap gw 
 
 " close all other windows (in the current tab)
   nmap gW :only<cr>
@@ -18,9 +17,8 @@
 " close all other tabs
   nmap gT :tabonly<cr>
 
-" previous/next buffer (for going without tabs)
-  nmap g[ :bp<cr>
-  nmap g] :bn<cr>
+" go to the directory listing for the current file
+  nmap gd :e %:h<cr>
 
 " ack for project-wide searching
   nmap g/ :LAck 
