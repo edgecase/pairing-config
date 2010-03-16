@@ -54,19 +54,3 @@ if $0 == 'irb' && ENV['RAILS_ENV']
   Object.const_set(:RAILS_DEFAULT_LOGGER, Logger.new(STDOUT))
 end
 
-
-def method_missing method, *args, &block
-  if method.to_s =~ /l+a+m+e+/i
-    `say lame #{args.join(' ')}`
-  else
-    super
-  end
-  nil
-end
-
-def Object.const_missing const
-  if const.to_s =~ /l+a+m+e+/i
-    `say lame`
-  end
-  super
-end
