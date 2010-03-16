@@ -12,3 +12,7 @@ source ~/.zsh/bindkeys.zsh
 source ~/.zsh/prompt.zsh
 
 if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
+
+# so I know what ruby I'm in
+ruby -v
+
