@@ -1,3 +1,6 @@
 .DS_Store
+tags
 .netrwhist
 r.rb
+.zsh_rake_cache
+.console
