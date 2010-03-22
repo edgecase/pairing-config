@@ -12,12 +12,14 @@ let g:colors_name="twilight"
 hi Normal         guifg=#F8F8F8           guibg=#141414
 hi Cursor         guifg=#F8F8F8           guibg=#A7A7A7
 hi CursorIM       guifg=#F8F8F8           guibg=#5F5A60
+hi CursorColumn   guibg=#181818
+hi CursorLine     guibg=#181818
 hi Directory      guifg=#8F9D6A           guibg=#141414
 hi ErrorMsg       guifg=#CF6A4C           guibg=#420E09
 hi VertSplit      guifg=#AC885B           guibg=#FFFFFF
 hi Folded         guifg=#F9EE98           guibg=#494949
 hi IncSearch      guifg=#000000           guibg=#CF6A4C
-hi LineNr         guifg=#7587A6           guibg=#141414
+hi LineNr         guifg=#333333           guibg=#141414
 hi ModeMsg        guifg=#CF7D34           guibg=#E9C062
 hi MoreMsg        guifg=#CF7D34           guibg=#E9C062
 hi NonText        guifg=#D2A8A1           guibg=#141414
