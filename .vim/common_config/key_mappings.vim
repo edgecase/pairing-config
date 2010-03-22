@@ -34,9 +34,6 @@
   nmap gs :tabe db/schema.rb<cr>
   nmap gr :tabe config/routes.rb<cr>
 
-" align pipe-separated tables for cucumber or textile with g| in visual mode
-	vmap g\| :Align \|<cr>
-
 " insert blank lines without going into insert mode
   nmap go o<esc>
   nmap gO O<esc>
