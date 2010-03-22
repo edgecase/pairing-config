@@ -8,6 +8,9 @@
   nmap <Leader>w :set wrap!<cr>
   nmap <Leader>W :set nowrap<cr>
 
+" shortcut to save all
+  nmap <Leader>s :wa<cr>
+
 " switch windows
   nmap gw 
 

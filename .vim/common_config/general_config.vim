@@ -34,6 +34,9 @@
 " pick up external file modifications
   set autoread
 
+" don't abandon buffers when unloading
+  set hidden
+
 " match indentation of previous line
   set autoindent
 
