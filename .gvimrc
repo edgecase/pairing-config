@@ -27,3 +27,5 @@
   hi CursorLine    guibg=#1A1625
   hi LineNr        guifg=#333355 guibg=#11121a
 
+" attempt to load a custom config for the currently logged in user
+runtime! custom_config/`whoami`.gvim
