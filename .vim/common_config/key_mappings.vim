@@ -23,6 +23,9 @@
 " go to the directory listing for the current file
   nmap gd :e %:h<cr>
 
+" go to the alternate file (previous buffer) with g-enter
+  nmap g 
+
 " ack for project-wide searching
   nmap g/ :LAck 
   nmap g* :LAck <C-R><C-W> 
