@@ -5,4 +5,4 @@
 "
 "   :Configs adam
 
-command! -nargs=1 Configs runtime! custom_config/<args>.vim
+command! -nargs=1 Configs runtime! custom_config/<args>.vim | runtime! custom_config/<args>.gvim
