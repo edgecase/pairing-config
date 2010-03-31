@@ -61,6 +61,9 @@
 " use tab-complete to see a list of possiblities when entering commands
   set wildmenu 
 
+" allow lots of tabs
+  set tabpagemax=20
+
 " remember last position in file
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 
