@@ -22,10 +22,7 @@
 
 " pretty but not terminal-compatible color scheme
   set background=dark
-  colors baycomb
-  hi CursorColumn  guibg=#1A1625
-  hi CursorLine    guibg=#1A1625
-  hi LineNr        guifg=#333355 guibg=#11121a
+  colors twilight2
 
 " attempt to load a custom config for the currently logged in user
 runtime! custom_config/`whoami`.gvim
