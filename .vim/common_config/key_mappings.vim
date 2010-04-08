@@ -14,6 +14,9 @@
 " switch windows
   nmap gw 
 
+" close current window
+  nmap gq :q<cr>
+
 " close all other windows (in the current tab)
   nmap gW :only<cr>
 
