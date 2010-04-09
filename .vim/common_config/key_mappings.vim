@@ -44,9 +44,7 @@
   nmap go o<esc>
   nmap gO O<esc>
 
-" Fuzzy Finder - go to launch; gb just for buffers; cmd-enter to open selected file in new tab
-  let g:FuzzyFinderOptions = { 'Base':{} }
-  let g:FuzzyFinderOptions.Base.key_open_tab = '<D-CR>'
-  nmap <Leader>t :FuzzyFinderTextMate<cr> 
-  nmap <Leader>b :FuzzyFinderBuffer<cr> 
-  nmap <Leader>f :ruby finder.rescan!<cr>
+" Fuzzy Finder - cmd-enter to open selected file in new tab
+  let g:fuf_keyOpenTabpage = '<D-CR>'
+  nmap <Leader>t :FufFile<cr> 
+  nmap <Leader>b :FufBuffer<cr> 
