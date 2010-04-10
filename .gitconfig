@@ -30,10 +30,11 @@
   co = checkout
   st = status
   ch = cherry -v origin
-  mine = log --author=Pairing
+  mine = log --author=Leon Gersing
+  df = diff
 [github]
-  user = pairing
-  token = 35647376b5bad04b2c078f1e2164bcb6
+  user = fallenrogue
+  token = 26317f3d1e301d94efb636a265cd44da
 [diff "ruby"]
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
 [push]
