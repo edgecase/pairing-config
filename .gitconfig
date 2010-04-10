@@ -1,6 +1,6 @@
 [user]
-  name  = Pairing Machine
-  email = pairing@edgecase.com
+  name  = Leon Gersing 
+  email = leon@edgecase.com
 
 [color]
   branch = auto
@@ -28,7 +28,7 @@
 
 [core]
   legacyheaders = false
-  excludesfile  = /Users/pairing/.gitignore
+  excludesfile  = /Users/fallenrogue/.gitignore
 
 [repack]
   usedeltabaseoffset = true
@@ -41,6 +41,10 @@
   mine = log --author=Leon Gersing
   df = diff
   br = branch
+
+[github]
+  user = fallenrogue
+  token = 26317f3d1e301d94efb636a265cd44da
 
 [diff "ruby"]
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
