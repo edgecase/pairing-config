@@ -31,7 +31,7 @@
 
 " ack for project-wide searching
   nmap g/ :LAck 
-  nmap g* :LAck <C-R><C-W> 
+  nmap g* :LAck -w <C-R><C-W><cr>
   nmap ga :LAckAdd 
   nmap gn :lnext<cr>
   nmap gp :lprev<cr>
@@ -43,6 +43,9 @@
 " insert blank lines without going into insert mode
   nmap go o<esc>
   nmap gO O<esc>
+
+" open the source in a browser for distribution or copying as RTF
+  nmap gH :OpenHtml<cr>
 
 " Fuzzy Finder - cmd-enter to open selected file in new tab
   let g:fuf_keyOpenTabpage = '<D-CR>'
