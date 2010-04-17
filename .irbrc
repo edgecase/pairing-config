@@ -8,6 +8,12 @@ rescue LoadError => e
   puts "wirble gem not found -- no colors, history, or completion for you"
 end
 
+begin
+  require 'ap'
+rescue LoadError => e
+  puts "awesome_print gem not found -- install and use 'ap' to print ruby objects awesomely"
+end
+
 alias q exit
 
 IRB.conf[:PROMPT_MODE] = :SIMPLE
