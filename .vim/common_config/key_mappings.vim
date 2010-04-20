@@ -11,6 +11,12 @@
 " shortcut to save all
   nmap <Leader>s :wa<cr>
 
+" shortcuts for running tests
+  nmap <Leader>ra :wa<cr> :RunAllRubyTests<cr>
+  nmap <Leader>rc :wa<cr> :RunRubyFocusedContext<cr>
+  nmap <Leader>rf :wa<cr> :RunRubyFocusedUnitTest<cr>
+  nmap <Leader>rl :wa<cr> :RunLastRubyTest<cr>
+
 " switch windows
   nmap gw 
 
