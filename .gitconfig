@@ -39,12 +39,9 @@
 [push]
   default = matching
 [git-pair]
-	authors = Ehren Murdick <ehren@theedgecase.com>
-	authors = Jon Distad <jon@theedgecase.com>
 	authors = Adam McCrea <adam@edgecase.com>
 	authors = Leon Gersing <fallenrogue@gmail.com>
 	authors = Felix Flores <felix@edgecase.com>
-	authors = Jerry Nummi <jerry@edgecase.com>
-	authors = Jessica Suttles <jessica@theedgecase.com>
+	authors = Jerry Nummi <jnummi@gmail.com>
 	authors = John Andrews <john.m.andrews@gmail.com>
 	authors = Craig Muth <craig.muth@gmail.com>
