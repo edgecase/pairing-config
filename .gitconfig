@@ -38,6 +38,9 @@
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
 [push]
   default = matching
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
 [git-pair]
 	authors = Adam McCrea <adam@edgecase.com>
 	authors = Leon Gersing <fallenrogue@gmail.com>
