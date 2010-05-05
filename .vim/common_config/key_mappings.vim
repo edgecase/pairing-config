@@ -14,6 +14,10 @@
 " switch windows
   nmap gw 
 
+" open project view
+
+  nmap gt :NERDTreeToggle<cr>
+
 " close current window
   nmap gq :q<cr>
 
@@ -51,3 +55,9 @@
   let g:fuf_keyOpenTabpage = '<D-CR>'
   nmap <Leader>t :FufFile<cr> 
   nmap <Leader>b :FufBuffer<cr> 
+
+" mapping the jumping between splits. Hold control while using vim nav.
+  nmap <C-J> <C-W>j<cr>
+  nmap <C-K> <C-W>k<cr>
+  nmap <C-H> <C-W>h<cr>
+  nmap <C-L> <C-W>l<cr>
