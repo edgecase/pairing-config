@@ -41,10 +41,7 @@ alias gitrm='git ls-files --deleted | xargs git rm'
 alias gitx='gitx --all'
 alias gpci='git-pair commit'
 alias gp='git pair'
-alias push='git push'
-alias rebase='git fetch; git rebase origin/master'
-alias st='git status'
 
 # Project shortcuts
 
-alias bwm='cd ~/projects/buywithme'
+alias bwm='cd ~/Code/EdgeCase/buywithme'

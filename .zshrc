@@ -12,3 +12,4 @@ source ~/.zsh/prompt.zsh
 source ~/.zsh/set_options.zsh
 
 if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
+
