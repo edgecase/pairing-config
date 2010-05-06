@@ -33,9 +33,6 @@
   mine = log --author=Leon Gersing
   df = diff
   br = branch
-[github]
-  user = fallenrogue
-  token = 26317f3d1e301d94efb636a265cd44da
 [diff "ruby"]
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
 [push]
