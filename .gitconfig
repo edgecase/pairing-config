@@ -30,8 +30,8 @@
   co = checkout
   st = status
   ch = cherry -v origin
-  mine = log --author=Pairing
   df = diff
+  mine = log --author=Pairing
   br = branch
 [github]
   user = fallenrogue
