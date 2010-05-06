@@ -31,6 +31,7 @@
   st = status
   ch = cherry -v origin
   mine = log --author=Pairing
+  br = branch
 [github]
   user = pairing
   token = 35647376b5bad04b2c078f1e2164bcb6
