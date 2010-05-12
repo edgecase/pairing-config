@@ -61,6 +61,7 @@
   let g:fuf_keyOpenTabpage = '<D-CR>'
   nmap <Leader>t :FufFile<cr> 
   nmap <Leader>b :FufBuffer<cr> 
+  nmap <Leader>f :FufRenewCache<cr> 
 
 " mapping the jumping between splits. Hold control while using vim nav.
   nmap <C-J> <C-W>j<cr>
