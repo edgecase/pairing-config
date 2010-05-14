@@ -34,6 +34,7 @@ class Object
     ignored_methods = include_inherited ? Object.methods : self.class.superclass.instance_methods
     (self.methods - ignored_methods).sort
   end
+  alias_method :m, :my_methods
 end
 
 
