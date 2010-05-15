@@ -1,53 +1,64 @@
 [user]
-  name = Pairing Machine
+  name  = Pairing Machine
   email = pairing@edgecase.com
+
 [color]
   branch = auto
-  diff = auto
+  diff   = auto
   status = auto
+
 [color "branch"]
   current = yellow reverse
-  local = yellow
-  remote = green
+  local   = yellow
+  remote  = green
+
 [color "diff"]
   meta = yellow bold
   frag = magenta bold
-  old = red bold
-  new = green bold
+  old  = red bold
+  new  = green bold
+
 [color "status"]
-  added = yellow
-  changed = green
+  added     = yellow
+  changed   = green
   untracked = cyan
+
 [merge]
   tool = opendiff
+
 [core]
   legacyheaders = false
-  excludesfile = /Users/pairing/.gitignore
+  excludesfile  = /Users/pairing/.gitignore
+
 [repack]
   usedeltabaseoffset = true
+
 [alias]
-  ci = commit
-  co = checkout
-  st = status
-  ch = cherry -v origin
-  df = diff
+  br   = branch
+  ch   = cherry -v origin
+  ci   = commit
+  co   = checkout
+  df   = diff
   mine = log --author=Pairing
-  br = branch
+  st   = status
+
 [diff "ruby"]
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
+
 [push]
   default = matching
+
 [branch "master"]
     remote = origin
-    merge = refs/heads/master
+    merge  = refs/heads/master
+
 [git-pair]
-	authors = Adam McCrea <adam@edgecase.com>
-	authors = Leon Gersing <fallenrogue@gmail.com>
-	authors = Felix Flores <felix@edgecase.com>
-	authors = Jerry Nummi <jerry@edgecase.com>
-	authors = Kevin Farst <kevin@edgecase.com>
 	authors = John Andrews <john.m.andrews@gmail.com>
-	authors = Craig Muth <craig.muth@gmail.com>
 	authors = Ken Barker <ken@theedgecase.com>
+	authors = Kevin Farst <kevin@edgecase.com>
+	authors = Felix Flores <felix@edgecase.com>
+	authors = Leon Gersing <fallenrogue@gmail.com>
+	authors = Adam McCrea <adam@edgecase.com>
+	authors = Jerry Nummi <jerry@edgecase.com>
 	authors = Joe O'Brien <joe@theedgecase.com>
 	authors = Marc Peabody <marc@edgecase.com>
