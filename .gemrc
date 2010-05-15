@@ -4,7 +4,7 @@
 :sources: 
 - http://gems.github.com
 - http://gemcutter.org/
-- http://rubyforge.org/
+- http://rubygems.org/
 gem: --no-ri --no-rdoc
 :bulk_threshold: 1000
 :backtrace: false
