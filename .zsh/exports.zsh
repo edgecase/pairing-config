@@ -1,4 +1,4 @@
-export PATH=$PATH:/usr/local/bin:/usr/local/git/bin
+export PATH=$PATH:/usr/local/bin:/usr/local/git/bin:/usr/local/sbin
 export PATH=$PATH:/opt/local/lib/mysql5/bin:/opt/local/lib/postgresql83/bin:/opt/local/bin:/opt/local/sbin
 export PATH=$PATH:~/Library/bin:/Applications/jruby-1.3.1/bin
 
