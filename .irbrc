@@ -5,13 +5,16 @@ begin
   Wirble.init
   Wirble.colorize
 rescue LoadError => e
-  puts "wirble gem not found -- no colors, history, or completion for you"
 end
 
 begin
   require 'ap'
 rescue LoadError => e
-  puts "awesome_print gem not found -- install and use 'ap' to print ruby objects awesomely"
+end
+
+begin
+  require 'interactive_editor'
+rescue LoadError => e
 end
 
 alias q exit
