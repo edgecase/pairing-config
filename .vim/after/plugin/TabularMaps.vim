@@ -4,8 +4,9 @@ endif
 
 AddTabularPattern!  assignment      / = /l0
 AddTabularPattern!  two_spaces      /  /l0
-AddTabularPattern!  symbols         /:/l0
+AddTabularPattern!  symbols         / :/l0
 AddTabularPattern!  hash            /=>/
+AddTabularPattern!  chunks          / \S\+/l0
 
 AddTabularPipeline! multiple_spaces /  / map(a:lines, "substitute(v:val, '   *', '  ', 'g')") | tabular#TabularizeStrings(a:lines, '  ', 'l0')
 
