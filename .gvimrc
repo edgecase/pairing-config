@@ -17,9 +17,6 @@
 " initial window size
   set lines=45 columns=120
 
-" be partially transparent
-  set transparency=7
-
 " pretty but not terminal-compatible color scheme
   set background=dark
   colors twilight2
