@@ -28,9 +28,6 @@
 " set temporary directory (don't litter local dir with swp/tmp files)
   set directory=/tmp/
 
-" show cursor crosshairs
-  set cursorcolumn cursorline
-
 " pick up external file modifications
   set autoread
 
