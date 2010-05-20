@@ -1,6 +1,10 @@
+alias :='cd ..'
+alias ::='cd ../..'
+alias :::='cd ../../..'
+
 alias ajaxrdoc="rdoc --fmt ajax --exclude '.*generator.*' --exclude '.*test.*' --exclude '.*spec.*'"
 alias c='clear'
-alias cpwd="pwd | ruby -pe'\$_.chomp!' | pbcopy"
+alias cpwd="pwd | ruby -pe'\$_.chomp!' | pbcopy" # copy path to clipboard
 alias grep='grep --color --line-number'
 alias gvim='mvim -p'
 alias ll='ls -lF' # long format listing; add / to end of directories
@@ -27,6 +31,7 @@ alias log='tail -f log/development.log'
 alias restart='touch tmp/restart.txt'
 alias rc='./script/rails console'
 alias rg='./script/rails generate'
+alias rmate='mate app config doc db features lib public script spec test stories liquid'
 alias rs='./script/rails server'
 alias sc='./script/console'
 alias sg='./script/generate'
@@ -44,7 +49,3 @@ alias gp='git pair'
 alias push='git push'
 alias rebase='git fetch; git rebase origin/master'
 alias st='git status'
-
-# Project shortcuts
-
-alias bwm='cd ~/projects/buywithme'
