@@ -1,7 +1,3 @@
-alias :='cd ..'
-alias ::='cd ../..'
-alias :::='cd ../../..'
-
 alias ajaxrdoc="rdoc --fmt ajax --exclude '.*generator.*' --exclude '.*test.*' --exclude '.*spec.*'"
 alias c='clear'
 alias cpwd="pwd | ruby -pe'\$_.chomp!' | pbcopy" # copy path to clipboard
