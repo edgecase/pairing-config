@@ -23,7 +23,7 @@ function git_branch_name() {
 }
 
 function git_author_name() {
-  git config --get user.name | sed 's/\([a-z ]*\)//g' | tr '[A-Z]' '[a-z]'
+  git config --get user.name | sed 's/\([a-zA-Z+]\)[a-zA-Z]* */\1/g' | tr '[A-Z]' '[a-z]'
 }
 
 precmd() { 
