@@ -10,13 +10,13 @@ alias mv='mv -i' # prompt before moving a file that would overwrite an existing 
 
 alias icons='cd ~/Pictures/icons; open -a Preview **/*.png **/*.tiff  **/*.jpg'
 alias preview='open -a Preview'
-
+alias bwm='cd ~/projects/buywithme'
 
 # Databses
 
-alias mysql='/opt/local/bin/mysql5 -u root --socket=/tmp/mysql.sock'
-alias mysqladmin='/opt/local/bin/mysqladmin5 -u root --socket=/tmp/mysql.sock'
-alias mysql_config='/opt/local/bin/mysql_config5'
+alias mysql='/usr/local/bin/mysql -u root --socket=/tmp/mysql.sock'
+alias mysqladmin='/usr/local/bin/mysqladmin -u root --socket=/tmp/mysql.sock'
+alias mysql_config='/usr/local/bin/mysql_config'
 alias postgres_start='pg_ctl -D ~/.pgdata -l ~/.pgdata/psql.log start'
 alias postgres_stop='pg_ctl -D ~/.pgdata stop'
 
