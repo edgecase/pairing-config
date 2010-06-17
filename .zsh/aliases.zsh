@@ -17,8 +17,8 @@ alias bwm='cd ~/projects/buywithme'
 alias mysql='/usr/local/bin/mysql -u root --socket=/tmp/mysql.sock'
 alias mysqladmin='/usr/local/bin/mysqladmin -u root --socket=/tmp/mysql.sock'
 alias mysql_config='/usr/local/bin/mysql_config'
-alias postgres_start='pg_ctl -D ~/.pgdata -l ~/.pgdata/psql.log start'
-alias postgres_stop='pg_ctl -D ~/.pgdata stop'
+alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # Rails
 
