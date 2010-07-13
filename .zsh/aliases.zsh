@@ -45,3 +45,7 @@ alias gp='git pair'
 alias push='git push'
 alias rebase='git fetch; git rebase origin/master'
 alias st='git status'
+
+# cap
+alias plog='cap SERVER=web production slice:tail_environment_logs'
+alias gf='git br -a | grep '
