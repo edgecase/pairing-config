@@ -68,3 +68,6 @@
   nmap <C-K> <C-W>k<cr>
   nmap <C-H> <C-W>h<cr>
   nmap <C-L> <C-W>l<cr>
+
+" shortcut for =>
+  imap <C-l> <Space>=><Space>
