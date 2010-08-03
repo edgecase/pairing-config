@@ -44,7 +44,7 @@
   set ruler rulerformat=%=%l/%L
 
 " don't show status line (other than between split windows)
-  set laststatus=0
+  set laststatus=2
 
 " don't beep for errors
   set visualbell
