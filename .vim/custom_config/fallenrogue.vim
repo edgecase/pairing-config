@@ -16,3 +16,4 @@ command! -complete=command XcodeDebug call XcodeDebug()
 " Command-Return Starts the program in the debugger
 :noremap <D-CR> :XcodeDebug<CR>
 
+filetype plugin on

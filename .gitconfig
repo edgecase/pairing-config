@@ -24,7 +24,7 @@
   untracked = cyan
 
 [merge]
-  tool = opendiff
+	tool = vimdiff
 
 [core]
   legacyheaders = false
@@ -76,3 +76,4 @@
 	authors = Ken Barker <ken@theedgecase.com>
 	authors = Matt Yoho <mby@mattyoho.com>
 	authors = Marc Peabody <marcpeabody@yahoo.com>
+	authors = Tony Schneider <tonywok@gmail.com>
