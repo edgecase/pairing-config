@@ -45,6 +45,11 @@ alias gp='git pair'
 alias push='git push'
 alias rebase='git fetch; git rebase origin/master'
 alias st='git status'
+alias gst='git status'
+alias gc='git commit'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias go='git co'
 
 # cap
 alias plog='cap SERVER=web production slice:tail_environment_logs'
