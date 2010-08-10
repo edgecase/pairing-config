@@ -4,3 +4,4 @@ tags
 r.rb
 .zsh_rake_cache
 .console
+*~
