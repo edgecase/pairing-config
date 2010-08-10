@@ -6,6 +6,7 @@ alias gvim='mvim -p'
 alias ll='ls -lF' # long format listing; add / to end of directories
 alias la='ls -aF' # include dot files in listing; add / to end of directories
 alias mv='mv -i' # prompt before moving a file that would overwrite an existing file
+alias watch='watchr ~/.watcher.rb'
 
 
 alias icons='cd ~/Pictures/icons; open -a Preview **/*.png **/*.tiff  **/*.jpg'
