@@ -41,6 +41,8 @@
   df   = diff
   mine = log --author=Pairing
   st   = status
+  lg   = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --graph --abbrev-commit --date=relative  
+  put  = "push origin HEAD"
 
 [diff "ruby"]
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
@@ -69,3 +71,5 @@
 	authors = Mike Enriquez <mike@enriquez.me>
 	authors = Abdel Saleh <abdel@edgecase.com>
 	authors = Matt Yoho <mby@mattyoho.com>
+	authors = Andy A Maleh <andy@obtiva.com>
+	authors = Jim Weirich <jim@edgecase.com>
