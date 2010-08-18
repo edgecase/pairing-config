@@ -1,6 +1,7 @@
 " Vim filetype plugin
 " Language:		Ruby
 " Maintainer:		Gavin Sinclair <gsinclair at gmail.com>
+" Last Change:		2010 Mar 15
 " URL:			http://vim-ruby.rubyforge.org
 " Anon CVS:		See above site
 " Release Coordinator:  Doug Kearns <dougkearns@gmail.com>
@@ -68,26 +69,28 @@ endif
 setlocal comments=:#
 setlocal commentstring=#\ %s
 
-if !exists("s:rubypath")
-  if has("ruby") && has("win32")
-    ruby VIM::command( 'let s:rubypath = "%s"' % ($: + begin; require %q{rubygems}; Gem.all_load_paths.sort.uniq; rescue LoadError; []; end).join(%q{,}) )
-    let s:rubypath = '.,' . substitute(s:rubypath, '\%(^\|,\)\.\%(,\|$\)', ',,', '')
+if !exists("s:ruby_path")
+  if exists("g:ruby_path")
+    let s:ruby_path = g:ruby_path
+  elseif has("ruby") && has("win32")
+    ruby VIM::command( 'let s:ruby_path = "%s"' % ($: + begin; require %q{rubygems}; Gem.all_load_paths.sort.uniq; rescue LoadError; []; end).join(%q{,}) )
+    let s:ruby_path = '.,' . substitute(s:ruby_path, '\%(^\|,\)\.\%(,\|$\)', ',,', '')
   elseif executable("ruby")
     let s:code = "print ($: + begin; require %q{rubygems}; Gem.all_load_paths.sort.uniq; rescue LoadError; []; end).join(%q{,})"
     if &shellxquote == "'"
-      let s:rubypath = system('ruby -e "' . s:code . '"')
+      let s:ruby_path = system('ruby -e "' . s:code . '"')
     else
-      let s:rubypath = system("ruby -e '" . s:code . "'")
+      let s:ruby_path = system("ruby -e '" . s:code . "'")
     endif
-    let s:rubypath = '.,' . substitute(s:rubypath, '\%(^\|,\)\.\%(,\|$\)', ',,', '')
+    let s:ruby_path = '.,' . substitute(s:ruby_path, '\%(^\|,\)\.\%(,\|$\)', ',,', '')
   else
     " If we can't call ruby to get its path, just default to using the
     " current directory and the directory of the current file.
-    let s:rubypath = ".,,"
+    let s:ruby_path = ".,,"
   endif
 endif
 
-let &l:path = s:rubypath
+let &l:path = s:ruby_path
 
 if has("gui_win32") && !exists("b:browsefilter")
   let b:browsefilter = "Ruby Source Files (*.rb)\t*.rb\n" .
@@ -101,15 +104,23 @@ let b:undo_ftplugin = "setl fo< inc< inex< sua< def< com< cms< path< kp<"
 
 if !exists("g:no_plugin_maps") && !exists("g:no_ruby_maps")
 
-  noremap <silent> <buffer> [m :<C-U>call <SID>searchsyn('\<def\>','rubyDefine','b')<CR>
-  noremap <silent> <buffer> ]m :<C-U>call <SID>searchsyn('\<def\>','rubyDefine','')<CR>
-  noremap <silent> <buffer> [M :<C-U>call <SID>searchsyn('\<end\>','rubyDefine','b')<CR>
-  noremap <silent> <buffer> ]M :<C-U>call <SID>searchsyn('\<end\>','rubyDefine','')<CR>
+  nnoremap <silent> <buffer> [m :<C-U>call <SID>searchsyn('\<def\>','rubyDefine','b','n')<CR>
+  nnoremap <silent> <buffer> ]m :<C-U>call <SID>searchsyn('\<def\>','rubyDefine','','n')<CR>
+  nnoremap <silent> <buffer> [M :<C-U>call <SID>searchsyn('\<end\>','rubyDefine','b','n')<CR>
+  nnoremap <silent> <buffer> ]M :<C-U>call <SID>searchsyn('\<end\>','rubyDefine','','n')<CR>
+  xnoremap <silent> <buffer> [m :<C-U>call <SID>searchsyn('\<def\>','rubyDefine','b','v')<CR>
+  xnoremap <silent> <buffer> ]m :<C-U>call <SID>searchsyn('\<def\>','rubyDefine','','v')<CR>
+  xnoremap <silent> <buffer> [M :<C-U>call <SID>searchsyn('\<end\>','rubyDefine','b','v')<CR>
+  xnoremap <silent> <buffer> ]M :<C-U>call <SID>searchsyn('\<end\>','rubyDefine','','v')<CR>
 
-  noremap <silent> <buffer> [[ :<C-U>call <SID>searchsyn('\<\%(class\<Bar>module\)\>','rubyModule\<Bar>rubyClass','b')<CR>
-  noremap <silent> <buffer> ]] :<C-U>call <SID>searchsyn('\<\%(class\<Bar>module\)\>','rubyModule\<Bar>rubyClass','')<CR>
-  noremap <silent> <buffer> [] :<C-U>call <SID>searchsyn('\<end\>','rubyModule\<Bar>rubyClass','b')<CR>
-  noremap <silent> <buffer> ][ :<C-U>call <SID>searchsyn('\<end\>','rubyModule\<Bar>rubyClass','')<CR>
+  nnoremap <silent> <buffer> [[ :<C-U>call <SID>searchsyn('\<\%(class\<Bar>module\)\>','rubyModule\<Bar>rubyClass','b','n')<CR>
+  nnoremap <silent> <buffer> ]] :<C-U>call <SID>searchsyn('\<\%(class\<Bar>module\)\>','rubyModule\<Bar>rubyClass','','n')<CR>
+  nnoremap <silent> <buffer> [] :<C-U>call <SID>searchsyn('\<end\>','rubyModule\<Bar>rubyClass','b','n')<CR>
+  nnoremap <silent> <buffer> ][ :<C-U>call <SID>searchsyn('\<end\>','rubyModule\<Bar>rubyClass','','n')<CR>
+  xnoremap <silent> <buffer> [[ :<C-U>call <SID>searchsyn('\<\%(class\<Bar>module\)\>','rubyModule\<Bar>rubyClass','b','v')<CR>
+  xnoremap <silent> <buffer> ]] :<C-U>call <SID>searchsyn('\<\%(class\<Bar>module\)\>','rubyModule\<Bar>rubyClass','','v')<CR>
+  xnoremap <silent> <buffer> [] :<C-U>call <SID>searchsyn('\<end\>','rubyModule\<Bar>rubyClass','b','v')<CR>
+  xnoremap <silent> <buffer> ][ :<C-U>call <SID>searchsyn('\<end\>','rubyModule\<Bar>rubyClass','','v')<CR>
 
   let b:undo_ftplugin = b:undo_ftplugin
         \."| sil! exe 'unmap <buffer> [[' | sil! exe 'unmap <buffer> ]]' | sil! exe 'unmap <buffer> []' | sil! exe 'unmap <buffer> ]['"
@@ -190,8 +201,11 @@ function! RubyBalloonexpr()
   endif
 endfunction
 
-function! s:searchsyn(pattern,syn,flags)
+function! s:searchsyn(pattern,syn,flags,mode)
     norm! m'
+    if a:mode ==# 'v'
+      norm! gv
+    endif
     let i = 0
     let cnt = v:count ? v:count : 1
     while i < cnt
