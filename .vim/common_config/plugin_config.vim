@@ -7,3 +7,9 @@
 
 " Allow old-school vim directory exploring
 let NERDTreeHijackNetrw = 0
+
+" Add some alignment patterns for :Tabular
+AddTabularPattern!  symbols         / :/l0
+AddTabularPattern!  hash            /=>/
+AddTabularPattern!  chunks          / \S\+/l0
+
