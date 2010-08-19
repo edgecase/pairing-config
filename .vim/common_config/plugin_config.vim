@@ -9,7 +9,9 @@
 let NERDTreeHijackNetrw = 0
 
 " Add some alignment patterns for :Tabular
-AddTabularPattern!  symbols         / :/l0
-AddTabularPattern!  hash            /=>/
-AddTabularPattern!  chunks          / \S\+/l0
-
+function! CustomTabularPatterns()
+  AddTabularPattern!  symbols         / :/l0
+  AddTabularPattern!  hash            /=>/
+  AddTabularPattern!  chunks          / \S\+/l0
+endfunction
+autocmd VimEnter * call CustomTabularPatterns()
