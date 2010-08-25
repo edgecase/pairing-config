@@ -1,3 +1,6 @@
+" required for several plugins
+  set nocompatible
+
 " don't wrap long lines
   set nowrap
 
@@ -46,6 +49,16 @@
 " show status line
   set laststatus=2
 
+" augment status line
+  function! ETry(function, ...)
+    if exists('*'.a:function)
+      return call(a:function, a:000)
+    else
+      return ''
+    endif
+  endfunction
+  set statusline=[%n]\ %<%.99f\ %h%w%m%r%{ETry('CapsLockStatusline')}%y%{ETry('rails#statusline')}%{ETry('fugitive#statusline')}%#ErrorMsg#%*%=%-16(\ %l,%c-%v\ %)%P
+
 " flip the default split directions to sane ones
   set splitright
   set splitbelow
@@ -56,9 +69,13 @@
 " make backspace work in insert mode
   set backspace=indent,eol,start
 
+" highlight trailing whitespace
+  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+  set list
+
 " have the mouse enabled all the time
   set mouse=a
-  
+
 " use tab-complete to see a list of possiblities when entering commands
   set wildmode=longest,list
 
