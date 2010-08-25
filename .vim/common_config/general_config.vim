@@ -43,8 +43,12 @@
 " show current line info (current/total)
   set ruler rulerformat=%=%l/%L
 
-" don't show status line (other than between split windows)
+" show status line
   set laststatus=2
+
+" flip the default split directions to sane ones
+  set splitright
+  set splitbelow
 
 " don't beep for errors
   set visualbell
@@ -56,7 +60,7 @@
   set mouse=a
   
 " use tab-complete to see a list of possiblities when entering commands
-  set wildmenu 
+  set wildmode=longest,list
 
 " allow lots of tabs
   set tabpagemax=20
