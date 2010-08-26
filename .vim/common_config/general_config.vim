@@ -15,6 +15,7 @@
   
 " use 2 spaces for tabs
   set expandtab tabstop=2 softtabstop=2 shiftwidth=2
+  set smarttab
 
 " enable line numbers, and don't make them any wider than necessary
   set number numberwidth=2
@@ -39,6 +40,9 @@
 
 " match indentation of previous line
   set autoindent
+
+" perform autoindenting based on filetype plugin
+  filetype plugin indent on
 
 " don't blink the cursor
   set guicursor=a:blinkon0
