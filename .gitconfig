@@ -41,6 +41,7 @@
   mine = log --author=Leon Gersing
   df = diff
   br = branch
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
 [github]
   user = fallenrogue
