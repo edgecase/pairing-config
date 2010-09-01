@@ -1,3 +1,5 @@
+# STUFF
+
 alias ajaxrdoc="rdoc --fmt ajax --exclude '.*generator.*' --exclude '.*test.*' --exclude '.*spec.*'"
 alias c='clear'
 alias cpwd="pwd | ruby -pe'\$_.chomp!' | pbcopy"
@@ -7,12 +9,15 @@ alias ll='ls -lF' # long format listing; add / to end of directories
 alias la='ls -aF' # include dot files in listing; add / to end of directories
 alias mv='mv -i' # prompt before moving a file that would overwrite an existing file
 
+# MYSQL
+alias start_mysql='/usr/local/mysql/bin/mysqld &'
+alias stop_mysql='killall -v mysqld'
+# PRETTY THINGS, SO WHAT THAT I LIKE PRETTY THINGS. 
 
 alias icons='cd ~/Pictures/icons; open -a Preview **/*.png **/*.tiff  **/*.jpg'
 alias preview='open -a Preview'
 
-
-# Rails
+# RAILS
 
 alias devlog='tail -200 -f log/development.log'
 alias log='tail -f log/development.log'
@@ -27,12 +32,12 @@ alias ss='./script/server'
 alias ssd='./script/server --debugger'
 alias testlog='tail -200 -f log/test.log'
 
-# Git
+# GIT
 
 alias gitx='gitx --all'
 alias gp='git pair'
 
-# Project shortcuts
+# PROJECT SHORTCUTS
 
 alias bwm='cd ~/Code/EdgeCase/buywithme'
 alias gcr='cd ~/Code/cocoa/GoogleClientReader'

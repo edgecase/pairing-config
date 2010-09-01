@@ -5,3 +5,4 @@ runtime! custom_config/`whoami`.vim
 :filetype plugin on
 :abbr hte the
 
+let g:LustyExplorerSuppressRubyWarning = 1
