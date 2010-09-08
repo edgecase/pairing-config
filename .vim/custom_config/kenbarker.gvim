@@ -1,0 +1,7 @@
+" a more laptop-friendly font size
+  set guifont=Monaco:h18
+
+" pretty but not terminal-compatible color scheme
+  set background=dark
+  colors anotherdark
+

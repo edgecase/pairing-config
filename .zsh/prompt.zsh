@@ -13,8 +13,13 @@ function set_prompt() {
 
   branch_name=$(git_branch_name)
   author_name=$(git_author_name)
+  ruby_name=$(set_ruby_version)
   if [ -n "$branch_name" ]; then
-    export PS1='%1~%{$reset_color$bold_color$fg[green]%}%{$reset_color$fg[green]%} ($author_name: $branch_name)%{$reset_color%} ~ '
+    if [ -n "$ruby_name" ]; then
+      export PS1='%1~%{$reset_color$bold_color$fg[green]%}%{$reset_color$fg[green]%} ($ruby_name [$author_name] $branch_name)%{$reset_color%} ~ '
+    else
+      export PS1='%1~%{$reset_color$bold_color$fg[green]%}%{$reset_color$fg[green]%} ($author_name: $branch_name)%{$reset_color%} ~ '
+    fi
   fi
 }
 
@@ -24,6 +29,10 @@ function git_branch_name() {
 
 function git_author_name() {
   git config --get user.name | sed 's/\([a-zA-Z+]\)[a-zA-Z]* */\1/g' | tr '[A-Z]' '[a-z]'
+}
+
+function set_ruby_version() {
+  ruby -v  | sed 's/ruby \([0-9]\.[0-9]\.[0-9]\) ([0-9-]* [a-z]* [0-9]*)* \[.*\]*/\1/g'
 }
 
 precmd() { 
