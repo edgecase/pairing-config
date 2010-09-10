@@ -43,6 +43,13 @@
   nmap gs :tabe db/schema.rb<cr>
   nmap gr :tabe config/routes.rb<cr>
 
+" # to surround with ruby string interpolation
+  let g:surround_35 = "#{\r}"
+" - to surround with no-output erb tag
+  let g:surround_45 = "<% \r %>"
+" = to surround with output erb tag
+  let g:surround_61 = "<%= \r %>"
+
 " insert blank lines without going into insert mode
   nmap go o<esc>
   nmap gO O<esc>
