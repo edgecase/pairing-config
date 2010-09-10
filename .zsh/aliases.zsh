@@ -79,7 +79,7 @@ alias testlog='tail -200 -f log/test.log'
 # Git
 
 alias gitrm='git ls-files --deleted | xargs git rm'
-alias gitx='gitx --all'
+# alias gitx='gitx --all'
 alias gpci='git-pair commit'
 alias gp='git pair'
 alias st='git status'

@@ -46,3 +46,8 @@ function reload! {
 function internet\? {
   (ping -c 3 -t 3 google.com >/dev/null 2>&1 && echo 'yep') || echo 'nope'
 }
+
+function gdt {
+  git-delete-tags $@
+}
+
