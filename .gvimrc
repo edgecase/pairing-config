@@ -18,7 +18,7 @@
   set lines=45 columns=120
 
 " be partially transparent
-  set transparency=7
+  set transparency=9
 
 " pretty but not terminal-compatible color scheme
   set background=dark
