@@ -10,7 +10,7 @@ alias la='ls -aF' # include dot files in listing; add / to end of directories
 alias mv='mv -i' # prompt before moving a file that would overwrite an existing file
 
 # MYSQL
-alias start_mysql='/usr/local/mysql/bin/mysqld &'
+alias start_mysql='/usr/local/bin/mysqld &'
 alias stop_mysql='killall -v mysqld'
 # PRETTY THINGS, SO WHAT THAT I LIKE PRETTY THINGS. 
 

@@ -8,3 +8,4 @@ nmap <silent> <Leader>b :LustyBufferExplorer<CR>
 nmap <silent> <Leader>g :LustyBufferGrep<CR>
 
 :autocmd BufNewFile  *.rb
+:let ruby_no_expensive = 1
