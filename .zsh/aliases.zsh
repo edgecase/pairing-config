@@ -40,5 +40,3 @@ alias gp='git pair'
 # PROJECT SHORTCUTS
 
 alias bwm='cd ~/Code/EdgeCase/buywithme'
-alias gcr='cd ~/Code/cocoa/GoogleClientReader'
-alias grc='cd ~/Code/cocoa/GoogleReaderClient'
