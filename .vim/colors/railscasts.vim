@@ -26,10 +26,10 @@ let g:colors_name = "railscasts"
 " Light Green  #A5C261
 " Tan          #FFC66D
 
-hi Normal                    guifg=#E6E1DC guibg=#2B2B2B
+hi Normal                    guifg=#E6E1DC guibg=#121212
 hi Cursor                    guibg=#FFFFFF
 hi CursorLine                guibg=#333435
-hi LineNr                    guifg=#888888 guibg=#DEDEDE
+hi LineNr                    guifg=#888888 guibg=#131313
 hi Search                    guibg=#5A647E
 hi Visual                    guibg=#5A647E
 
@@ -57,7 +57,7 @@ hi PMenuThumb                guibg=#AAAAAA gui=NONE
 
 "rubyComment
 hi Comment                   guifg=#BC9458 gui=italic
-hi Todo                      guifg=#BC9458 guibg=NONE gui=italic
+hi Todo                      guifg=#BC9458 guibg=#CAFF70 gui=italic
 
 "rubyPseudoVariable
 "nil, self, symbols, etc

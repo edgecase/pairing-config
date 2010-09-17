@@ -12,4 +12,7 @@ source ~/.zsh/prompt.zsh
 source ~/.zsh/set_options.zsh
 
 if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
+<<<<<<< HEAD
 
+=======
+>>>>>>> 515859517d9729fad7302cdeeaf9f825d369432e

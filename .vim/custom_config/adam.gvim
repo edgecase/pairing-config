@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 " no transparency for me
   set transparency=0
+=======
+" a more laptop-friendly font size
+  set guifont=Monaco:h18
+>>>>>>> 515859517d9729fad7302cdeeaf9f825d369432e

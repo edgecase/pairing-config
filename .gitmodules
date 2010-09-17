@@ -1,0 +1,3 @@
+[submodule "emacs-config/jimweirich"]
+	path = emacs-config/jimweirich
+	url = git://github.com/jimweirich/emacs-setup.git

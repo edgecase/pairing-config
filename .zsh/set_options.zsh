@@ -6,5 +6,6 @@ setopt extendedglob             # Extra filename generation features
 setopt hist_ignore_dups         # Don't enter command in history if it is duplicate of previous command
 setopt hist_find_no_dups        # Don't display duplicates when searching commands
 setopt inc_append_history       # Append history item as soon as command is executed, rather than waiting until the shell is killed
-setopt nohup										# In general, we don't kill background jobs upon logging out
+setopt nobeep                   # Kill the fscking beep!
+setopt nohup                    # In general, we don't kill background jobs upon logging out
 setopt prompt_subst             # parameter expansion, command substitution and arithmetic expansion is performed in prompts

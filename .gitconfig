@@ -1,5 +1,5 @@
 [user]
-  name  = Leon Gersing 
+  name  = Leon Gersing
   email = leon@edgecase.com
 
 [color]
@@ -24,11 +24,11 @@
   untracked = cyan
 
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 
 [core]
   legacyheaders = false
-  excludesfile  = /Users/fallenrogue/.gitignore
+  excludesfile  = /Users/leon/.gitignore
 
 [repack]
   usedeltabaseoffset = true
@@ -41,7 +41,7 @@
   mine = log --author=Leon Gersing
   df = diff
   br = branch
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
 [github]
   user = fallenrogue
@@ -58,21 +58,20 @@
     merge  = refs/heads/master
 
 [git-pair]
-	authors = Adam McCrea <adam@edgecase.com>
-	authors = Leon Gersing <fallenrogue@gmail.com>
-	authors = Leon Gersing <leon@edgecase.com>
-	authors = Felix Flores <felix@edgecase.com>
-	authors = Jerry Nummi <jerry@edgecase.com>
-	authors = Kevin Farst <kevin@edgecase.com>
-	authors = John Andrews <john.m.andrews@gmail.com>
-	authors = John Andrews <john@edgecase.com>
-	authors = Ken Barker <ken@theedgecase.com>
-	authors = Kevin Farst <kevin@edgecase.com>
-	authors = Adam McCrea <adam@edgecase.com>
-	authors = Jerry Nummi <jerry@edgecase.com>
-	authors = Joe O'Brien <joe@theedgecase.com>
-	authors = Marc Peabody <marc@edgecase.com>
-	authors = Marc Peabody <marcpeabody@yahoo.com>
-	authors = Kevin Farst <kevin@edgecase.com>
-	authors = Matt Yoho <mby@mattyoho.com>
-	authors = Tony Schneider <tonywok@gmail.com>
+  authors = Adam McCrea <adam@edgecase.com>
+  authors = Leon Gersing <fallenrogue@gmail.com>
+  authors = Leon Gersing <leon@edgecase.com>
+  authors = Felix Flores <felix@edgecase.com>
+  authors = Adam McCrea <adam@edgecase.com>
+  authors = Monica McJunkin <monica@theedgecase.com>
+  authors = Jerry Nummi <jerry@edgecase.com>
+  authors = Joe O'Brien <joe@theedgecase.com>
+  authors = Marc Peabody <marc@edgecase.com>
+  authors = Paul Wilson <paul@edgecase.com>
+  authors = Tony Schneider <tonywok@gmail.com>
+  authors = Drew Neil <andrew.jr.neil@gmail.com>
+  authors = Mike Enriquez <mike@enriquez.me>
+  authors = Abdel Saleh <abdel@edgecase.com>
+  authors = Matt Yoho <mby@mattyoho.com>
+  authors = Andy A Maleh <andy@obtiva.com>
+  authors = Jim Weirich <jim@edgecase.com>

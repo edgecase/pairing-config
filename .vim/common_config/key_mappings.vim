@@ -21,7 +21,6 @@
   nmap gw 
 
 " open project view
-
   nmap gt :NERDTreeToggle<cr>
 
 " close current window
@@ -29,12 +28,6 @@
 
 " close all other windows (in the current tab)
   nmap gW :only<cr>
-
-" close all other tabs
-  nmap gT :tabonly<cr>
-
-" go to the directory listing for the current file
-  nmap gd :e %:h<cr>
 
 " go to the alternate file (previous buffer) with g-enter
   nmap g 
@@ -49,6 +42,13 @@
 " shortcuts for frequenly used files
   nmap gs :tabe db/schema.rb<cr>
   nmap gr :tabe config/routes.rb<cr>
+
+" # to surround with ruby string interpolation
+  let g:surround_35 = "#{\r}"
+" - to surround with no-output erb tag
+  let g:surround_45 = "<% \r %>"
+" = to surround with output erb tag
+  let g:surround_61 = "<%= \r %>"
 
 " insert blank lines without going into insert mode
   nmap go o<esc>
@@ -68,3 +68,21 @@
   nmap <C-K> <C-W>k<cr>
   nmap <C-H> <C-W>h<cr>
   nmap <C-L> <C-W>l<cr>
+
+" shortcut for =>
+  imap <C-l> <Space>=><Space>
+
+" handy macro expansion
+  abbrev Lidsa Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  iabbrev rdebug require 'ruby-debug'; Debugger.start; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger
+
+" Yank from the cursor to the end of the line, to be consistent with C and D.
+nnoremap Y y$
+
+" rails.vim mappings
+map <Leader>oc :Rcontroller<Space>
+map <Leader>ov :Rview<Space>
+map <Leader>om :Rmodel<Space>
+map <Leader>oh :Rhelper<Space>
+map <Leader>oj :Rjavascript<Space>
+map <Leader>os :Rstylesheet<Space>
