@@ -7,5 +7,5 @@ nmap <silent> <Leader>r :LustyFilesystemExplorerFromHere<CR>
 nmap <silent> <Leader>b :LustyBufferExplorer<CR>
 nmap <silent> <Leader>g :LustyBufferGrep<CR>
 
-:autocmd BufNewFile  *.rb
 :let ruby_no_expensive = 1
+:set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]

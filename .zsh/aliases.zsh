@@ -40,3 +40,6 @@ alias gp='git pair'
 # PROJECT SHORTCUTS
 
 alias bwm='cd ~/Code/EdgeCase/buywithme'
+
+# MONGODB
+alias mongo.start='mongod run --config /usr/local/Cellar/mongodb/1.6.2-x86_64/mongod.conf &'
