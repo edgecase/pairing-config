@@ -33,9 +33,9 @@
   nmap g 
 
 " ack for project-wide searching
-  nmap g/ :LAck 
-  nmap g* :LAck -w <C-R><C-W><cr>
-  nmap ga :LAckAdd 
+  nmap g/ :LAck! 
+  nmap g* :LAck! -w <C-R><C-W><cr>
+  nmap ga :LAckAdd! 
   nmap gn :lnext<cr>
   nmap gp :lprev<cr>
 
