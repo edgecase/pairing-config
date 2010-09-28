@@ -84,7 +84,7 @@
   set mouse=a
 
 " use tab-complete to see a list of possiblities when entering commands
-  set wildmode=list:longest
+  set wildmode=list:longest,full
 
 " allow lots of tabs
   set tabpagemax=20
