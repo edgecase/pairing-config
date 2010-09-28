@@ -1,2 +1,2 @@
 " a more laptop-friendly font size
-  set guifont=Monaco:h18
+  set guifont=Monaco:h15
