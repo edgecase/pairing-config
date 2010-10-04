@@ -28,7 +28,7 @@
 
 " ack for project-wide searching
   nmap g/ :LAck! 
-  nmap g* :LAck! -w <C-R><C-W><cr>
+  nmap g* :LAck! -w <C-R><C-W>
   nmap ga :LAckAdd! 
   nmap gn :lnext<cr>
   nmap gp :lprev<cr>
