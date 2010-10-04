@@ -17,14 +17,8 @@
   nmap <Leader>rf :wa<cr> :RunRubyFocusedUnitTest<cr>
   nmap <Leader>rl :wa<cr> :RunLastRubyTest<cr>
 
-" switch windows
-  nmap gw 
-
 " open project view
   nmap gt :NERDTreeToggle<cr>
-
-" close current window
-  nmap gq :q<cr>
 
 " close all other windows (in the current tab)
   nmap gW :only<cr>
@@ -53,9 +47,6 @@
 " insert blank lines without going into insert mode
   nmap go o<esc>
   nmap gO O<esc>
-
-" open the source in a browser for distribution or copying as RTF
-  nmap gH :OpenHtml<cr>
 
 " Fuzzy Finder - cmd-enter to open selected file in new tab
   let g:fuf_keyOpenTabpage = '<D-CR>'
