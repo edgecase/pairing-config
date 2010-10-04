@@ -36,6 +36,7 @@ alias sp='./script/spec -cfs'
 alias ss='./script/server'
 alias ssd='./script/server --debugger'
 alias testlog='tail -200 -f log/test.log'
+alias cukelog='tail -200 -f log/cucumber.log'
 
 # Git
 
