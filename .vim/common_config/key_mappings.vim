@@ -26,10 +26,10 @@
 " go to the alternate file (previous buffer) with g-enter
   nmap g 
 
-" ack for project-wide searching
-  nmap g/ :LAck!
-  nmap g* :LAck! -w <C-R><C-W>
-  nmap ga :LAckAdd!
+" ack for project-wide searching (TRAILING WHITESPACE IS INTENTIONAL)
+  nmap g/ :LAck! 
+  nmap g* :LAck! -w <C-R><C-W> 
+  nmap ga :LAckAdd! 
   nmap gn :lnext<cr>
   nmap gp :lprev<cr>
   nmap gq :lcl<cr>
