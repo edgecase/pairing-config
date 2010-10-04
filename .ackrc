@@ -12,6 +12,8 @@
 --ignore-dir=system
 --ignore-dir=tmp
 --ignore-dir=vendor
+--ignore-dir=uploads
+--ignore-dir=images
 
 --color
 --follow
