@@ -27,11 +27,12 @@
   nmap g 
 
 " ack for project-wide searching
-  nmap g/ :LAck! 
+  nmap g/ :LAck!
   nmap g* :LAck! -w <C-R><C-W>
-  nmap ga :LAckAdd! 
+  nmap ga :LAckAdd!
   nmap gn :lnext<cr>
   nmap gp :lprev<cr>
+  nmap gq :lcl<cr>
 
 " shortcuts for frequenly used files
   nmap gs :e db/schema.rb<cr>
