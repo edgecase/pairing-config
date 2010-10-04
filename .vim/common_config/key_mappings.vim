@@ -79,3 +79,6 @@
   map <Leader>oh :Rhelper<Space>
   map <Leader>oj :Rjavascript<Space>
   map <Leader>os :Rstylesheet<Space>
+
+" select the lines which were just pasted
+  nnoremap vv V`]
