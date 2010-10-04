@@ -40,8 +40,8 @@
   nmap gp :lprev<cr>
 
 " shortcuts for frequenly used files
-  nmap gs :tabe db/schema.rb<cr>
-  nmap gr :tabe config/routes.rb<cr>
+  nmap gs :e db/schema.rb<cr>
+  nmap gr :e config/routes.rb<cr>
 
 " # to surround with ruby string interpolation
   let g:surround_35 = "#{\r}"
