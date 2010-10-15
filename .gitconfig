@@ -52,8 +52,8 @@
   default = matching
 
 [branch "master"]
-    remote = origin
-    merge  = refs/heads/master
+	remote = origin
+	merge = refs/heads/master
 
 [git-pair]
 	authors = John Andrews <john.m.andrews@gmail.com>
