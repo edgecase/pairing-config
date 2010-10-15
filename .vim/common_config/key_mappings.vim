@@ -27,12 +27,12 @@
   nmap g 
 
 " ack for project-wide searching (TRAILING WHITESPACE IS INTENTIONAL)
-  nmap g/ :LAck! 
-  nmap g* :LAck! -w <C-R><C-W> 
-  nmap ga :LAckAdd! 
-  nmap gn :lnext<cr>
-  nmap gp :lprev<cr>
-  nmap gq :lcl<cr>
+  nmap g/ :Ack! 
+  nmap g* :Ack! -w <C-R><C-W> 
+  nmap ga :AckAdd! 
+  nmap gn :cnext<cr>
+  nmap gp :cprev<cr>
+  nmap gq :ccl<cr>
 
 " shortcuts for frequenly used files
   nmap gs :e db/schema.rb<cr>
