@@ -56,10 +56,10 @@
   nmap <Leader>f :FufRenewCache<cr>
 
 " mapping the jumping between splits. Hold control while using vim nav.
-  nmap <C-J> <C-W>j<cr>
-  nmap <C-K> <C-W>k<cr>
-  nmap <C-H> <C-W>h<cr>
-  nmap <C-L> <C-W>l<cr>
+  nmap <C-J> <C-W>j
+  nmap <C-K> <C-W>k
+  nmap <C-H> <C-W>h
+  nmap <C-L> <C-W>l
 
 " shortcut for =>
   imap <C-l> <Space>=><Space>
