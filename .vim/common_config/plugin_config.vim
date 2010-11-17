@@ -21,5 +21,5 @@ let g:fuf_coveragefile_prompt = '>GoToFile[]>'
 let g:fuf_coveragefile_exclude = '\v\~$|' .
 \                                '\.(o|exe|dll|bak|swp|log|sqlite3|png|gif|jpg)$|' .
 \                                '(^|[/\\])\.(hg|git|bzr|bundle)($|[/\\])|' .
-\                                '(^|[/\\])(log|tmp|vendor|system|doc|coverage)($|[/\\])'
+\                                '(^|[/\\])(log|tmp|vendor|system|doc|coverage|build)($|[/\\])'
 
