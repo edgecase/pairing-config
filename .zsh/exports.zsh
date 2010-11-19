@@ -1,5 +1,4 @@
-export PATH=$PATH:/usr/local/bin:/usr/local/git/bin:/usr/local/sbin
-export PATH=$PATH:/usr/local/mysql/bin
+export PATH=/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH
 
 export CDPATH=:~/projects
 export RUBYOPT='rubygems -Itest'

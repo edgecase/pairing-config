@@ -50,3 +50,4 @@ function internet\? {
 function hamlize(){
   find app/views -name '*erb' | xargs html2haml -r
 }
+
