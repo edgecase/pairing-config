@@ -12,7 +12,7 @@
 
 " scroll the window when we get near the edge
   set scrolloff=4 sidescrolloff=10
-  
+
 " use 2 spaces for tabs
   set expandtab tabstop=2 softtabstop=2 shiftwidth=2
   set smarttab
@@ -84,7 +84,7 @@
   set mouse=a
 
 " use tab-complete to see a list of possiblities when entering commands
-  set wildmode=longest,list
+  set wildmode=list:longest,full
 
 " allow lots of tabs
   set tabpagemax=20

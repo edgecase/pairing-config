@@ -4,7 +4,6 @@
 " use a brighter theme, be happy people.
   colors Railscasts
 
-" # to surround with ruby string interpolation
   let g:surround_35 = "#{\r}"
 
 " - to surround with no-output erb tag

@@ -35,6 +35,7 @@ alias sp='./script/spec -cfs'
 alias ss='./script/server'
 alias ssd='./script/server --debugger'
 alias testlog='tail -200 -f log/test.log'
+alias cukelog='tail -200 -f log/cucumber.log'
 
 # MONGODB
 alias mongo.start='mongod run --config /usr/local/Cellar/mongodb/1.6.2-x86_64/mongod.conf &'

@@ -42,6 +42,7 @@
   df = diff
   br = branch
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 
 [github]
   user = fallenrogue
@@ -54,8 +55,8 @@
   default = matching
 
 [branch "master"]
-    remote = origin
-    merge  = refs/heads/master
+  remote = origin
+  merge = refs/heads/master
 
 [git-pair]
   authors = Adam McCrea <adam@edgecase.com>

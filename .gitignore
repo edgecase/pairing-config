@@ -51,3 +51,5 @@ Backup[ ]of[ ]*.numbers/
 *~
 TAGS
 .vim/syntax/git-log.vim
+db/GeoLiteCity.dat
+lib_ext/

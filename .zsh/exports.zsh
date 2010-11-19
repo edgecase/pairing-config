@@ -1,6 +1,6 @@
 export PATH=/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH
 
-export CDPATH=:~/projects
+export CDPATH=:~/Code
 export RUBYOPT='rubygems -Itest'
 export GIT_EDITOR="vim"
 export EDITOR="mvim"

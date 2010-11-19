@@ -8,3 +8,5 @@ map <Leader>om :Rmodel<Space>
 map <Leader>oh :Rhelper<Space>
 map <Leader>oj :Rjavascript<Space>
 map <Leader>os :Rstylesheet<Space>
+
+let g:surround_35 = "#{\r}"
