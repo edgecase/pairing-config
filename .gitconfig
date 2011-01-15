@@ -76,3 +76,9 @@
   authors = Matt Yoho <mby@mattyoho.com>
   authors = Andy A Maleh <andy@obtiva.com>
   authors = Jim Weirich <jim@edgecase.com>
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope

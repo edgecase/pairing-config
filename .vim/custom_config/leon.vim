@@ -8,3 +8,6 @@ nmap <silent> <Leader>b :LustyBufferExplorer<CR>
 nmap <silent> <Leader>g :LustyBufferGrep<CR>
 
 :let ruby_no_expensive = 1
+
+colorscheme rubyblue
+set gfn=Inconsolata\ 16
