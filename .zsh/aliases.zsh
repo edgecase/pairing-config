@@ -1,20 +1,19 @@
+# STUFF
+
 alias ajaxrdoc="rdoc --fmt ajax --exclude '.*generator.*' --exclude '.*test.*' --exclude '.*spec.*'"
 alias c='clear'
-alias cpwd="pwd | ruby -pe'\$_.chomp!' | pbcopy" # copy path to clipboard
+alias cpwd="pwd | ruby -pe'\$_.chomp!' | pbcopy"
 alias grep='grep --color --line-number'
 alias gvim='mvim -p'
 alias ll='ls -lF' # long format listing; add / to end of directories
 alias la='ls -aF' # include dot files in listing; add / to end of directories
 alias mv='mv -i' # prompt before moving a file that would overwrite an existing file
-alias watch='watchr ~/.watchr.rb'
 
-
+# PRETTY THINGS, SO WHAT THAT I LIKE PRETTY THINGS. 
 alias icons='cd ~/Pictures/icons; open -a Preview **/*.png **/*.tiff  **/*.jpg'
 alias preview='open -a Preview'
-alias bwm='cd ~/projects/buywithme'
 
 # Databses
-
 alias mysql='/usr/local/bin/mysql -u root --socket=/tmp/mysql.sock'
 alias mysqladmin='/usr/local/bin/mysqladmin -u root --socket=/tmp/mysql.sock'
 alias mysql_config='/usr/local/bin/mysql_config'
@@ -22,7 +21,7 @@ alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/ser
 alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # Rails
-
+alias watch='watchr ~/.watchr.rb'
 alias devlog='tail -200 -f log/development.log'
 alias log='tail -f log/development.log'
 alias restart='touch tmp/restart.txt'
@@ -38,8 +37,10 @@ alias ssd='./script/server --debugger'
 alias testlog='tail -200 -f log/test.log'
 alias cukelog='tail -200 -f log/cucumber.log'
 
-# Git
+# MONGODB
+alias mongo.start='mongod run --config /usr/local/Cellar/mongodb/1.6.2-x86_64/mongod.conf &'
 
+# Git
 alias gitrm='git ls-files --deleted | xargs git rm'
 alias gitx='gitx --all'
 alias gpci='git-pair commit'
