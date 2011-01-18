@@ -1,5 +1,5 @@
 function gitdays {
-  git log --author=Pairing --reverse --since="$@ days ago" --pretty="format:%n%Cgreen%cd%n%n%s%n%b%n---------------------------------------------" 
+  git log --reverse --since="$@ days ago" --pretty="format:%n%Cgreen%cd%n%n%s%n%b%n---------------------------------------------" 
 }
 
 # accepts a css file and compacts the delcarations to one line
