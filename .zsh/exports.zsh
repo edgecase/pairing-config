@@ -4,6 +4,7 @@ export PATH=/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/opt/local/lib/mysql5/bin:/opt/local/lib/postgresql83/bin:/opt/local/bin:/opt/local/sbin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
+export CDPATH=:~/Code
 
 export EC2_HOME=~/.ec2
 export PATH=$PATH:$EC2_HOME/bin
