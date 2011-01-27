@@ -61,6 +61,9 @@
 [git-pair]
   authors = John Andrews <john.m.andrews@gmail.com>
   authors = Ken Barker <ken@theedgecase.com>
+  authors = Adam McCrea <adam@edgecase.com>
+  authors = Leon Gersing <leongersing@gmail.com>
+  authors = Leon Gersing <leon@edgecase.com>
   authors = Felix Flores <felix@edgecase.com>
   authors = Adam McCrea <adam@edgecase.com>
   authors = Monica McJunkin <monica@theedgecase.com>
@@ -76,4 +79,9 @@
   authors = Jim Weirich <jim@edgecase.com>
   authors = Chandu Tennety <chandu.tennety@janova.us>
   authors = Scott Barron <scott@edgecase.com>
-  authors = Leon Gersing <leongersing@gmail.com>
+[difftool "Kaleidoscope"]
+  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+  prompt = false
+[diff]
+  tool = Kaleidoscope
