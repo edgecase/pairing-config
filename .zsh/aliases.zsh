@@ -58,3 +58,7 @@ alias getch='git fetch'
 # cap
 alias plog='cap SERVER=web production slice:tail_environment_logs'
 alias gf='git br -a | grep '
+
+# project helpers
+alias tag_ruby='ctags -R --exclude=.git --exclude=log * ~/.rvm/gems/*'
+
