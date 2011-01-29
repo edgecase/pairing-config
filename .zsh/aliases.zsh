@@ -6,7 +6,6 @@ alias cpwd="pwd | ruby -pe'\$_.chomp!' | pbcopy" # copy path to clipboard
 # alias ll='ls -lF' # long format listing; add / to end of directories
 # alias la='ls -aF' # include dot files in listing; add / to end of directories
 alias mv='mv -i' # prompt before moving a file that would overwrite an existing file
-alias watch='watchr ~/.watchr.rb'
 
 alias ls='ls -G'
 alias capone='cap _1.4.1_'
@@ -19,8 +18,8 @@ alias rtasks='rake --tasks'
 # alias ss='./script/server'
 # alias sc='./script/console'
 alias quit='exit'
-alias vi='mvim -p'
-alias vim='mvim -p'
+# alias vi='mvim -p'
+# alias vim='mvim -p'
 alias gvim='mvim -p'
 alias gitfx='git fetch origin; gitx --all'
 alias gitsdc='echo `git rev-parse HEAD` > last_staging'
@@ -51,8 +50,8 @@ alias dip='cd ~/projects/edgecase/clients/diplomas'
 
 # Databses
 
-alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias pg_start='pg_ctl -D /opt/local/var/db/postgresql83/defaultdb -l /opt/local/var/db/postgresql83/defaultdb/server.log start'
+alias pg_stop='pg_ctl -D /opt/local/var/db/postgresql83/defaultdb stop -s -m fast'
 alias postgres_start='pg_ctl -D ~/.pgdata -l ~/.pgdata/psql.log start'  # mine
 alias postgres_stop='pg_ctl -D ~/.pgdata stop'  # mine
 alias mysql='/opt/local/bin/mysql5 -u root --socket=/tmp/mysql.sock'
