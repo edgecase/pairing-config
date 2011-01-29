@@ -47,6 +47,39 @@ function internet\? {
   (ping -c 3 -t 3 google.com >/dev/null 2>&1 && echo 'yep') || echo 'nope'
 }
 
+function git_bd_merged { # git local branch deletion
+  # deletes any local feature branches
+  # branches with unmerged commits to production are kept
+  git checkout production
+  skip=('*' production master staging acceptance)
+  # for bra in `git branch | awk '/(.*)/ {print $1}'`
+  for bra in `git branch | awk '/([A-z0-9_-].*)/ {print $1}'`
+  do
+    set -A skipit "false"
+    for sk in $skip
+    do
+      if [ "$bra" = "$sk" ]
+      then
+        set -A skipit "true"
+      fi
+    done
+    if [ "$skipit" = "true" ]
+    then
+      echo skipping $bra
+      continue
+    fi
+    set -A diff "`git cherry -v production $bra`"
+    if [ "$diff" != "" ]
+    then
+      echo $bra has unmerged commits. not deleting
+    else
+      git branch -D $bra
+    fi
+  done
+
+  git branch
+}
+
 function gdt {
   git-delete-tags $@
 }
