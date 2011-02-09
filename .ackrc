@@ -8,7 +8,6 @@
 --ignore-dir=doc
 --ignore-dir=fixtures
 --ignore-dir=log
---ignore-dir=script
 --ignore-dir=system
 --ignore-dir=tmp
 --ignore-dir=vendor
