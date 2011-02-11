@@ -14,12 +14,12 @@ namespace :symlink do
 end
 
 def symlink(options = {})
-  files = Dir.glob('.*') - ['.git', '.gitmodules', '.', '..'] - options[:skip].to_a
+  files = Dir.glob('.*') - ['.git', '.gitmodules', '.', '..'] - [options[:skip]]
   files.each do |file|
     case
-      when file_identical?(file) : skip_identical_file(file)
-      when replace_all_files?    : link_file(file)
-      when file_missing?(file)   : link_file(file)
+      when file_identical?(file) then skip_identical_file(file)
+      when replace_all_files?    then link_file(file)
+      when file_missing?(file)   then link_file(file)
       else                         prompt_to_link_file(file)
     end
   end
@@ -52,9 +52,9 @@ end
 def prompt_to_link_file(file)
   print "overwrite? ~/#{file} [ynaq]  "
   case $stdin.gets.chomp
-    when 'y' : replace_file(file)
-    when 'a' : replace_all(file)
-    when 'q' : exit      
+    when 'y' then replace_file(file)
+    when 'a' then replace_all(file)
+    when 'q' then exit      
     else       skip_file(file)
   end
 end
