@@ -21,3 +21,4 @@ fi
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 export ARCHFLAGS='-arch x86_64'
+export PGDATA=/usr/local/var/postgres

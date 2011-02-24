@@ -23,9 +23,6 @@
   changed   = green
   untracked = cyan
 
-[merge]
-  tool = vimdiff
-
 [core]
   legacyheaders = false
   excludesfile  = /Users/leon/.gitignore
@@ -79,6 +76,7 @@
   authors = Jim Weirich <jim@edgecase.com>
   authors = Chandu Tennety <chandu.tennety@janova.us>
   authors = Scott Barron <scott@edgecase.com>
+
 [difftool "Kaleidoscope"]
   cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool]
