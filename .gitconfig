@@ -43,7 +43,7 @@
   st   = status
   lg   = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --graph --abbrev-commit --date=relative  
   put  = "push origin HEAD"
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 
 [diff "ruby"]
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
@@ -52,27 +52,27 @@
   default = matching
 
 [branch "master"]
-	remote = origin
-	merge = refs/heads/master
+  remote = origin
+  merge = refs/heads/master
 
 [git-pair]
-	authors = John Andrews <john.m.andrews@gmail.com>
-	authors = Ken Barker <ken@theedgecase.com>
-	authors = Kevin Farst <kevin@edgecase.com>
-	authors = Felix Flores <felix@edgecase.com>
-	authors = Leon Gersing <fallenrogue@gmail.com>
-	authors = Adam McCrea <adam@edgecase.com>
-	authors = Monica McJunkin <monica@theedgecase.com>
-	authors = Jerry Nummi <jerry@edgecase.com>
-	authors = Joe O'Brien <joe@theedgecase.com>
-	authors = Marc Peabody <marc@edgecase.com>
-	authors = Paul Wilson <paul@edgecase.com>
-	authors = Tony Schneider <tonywok@gmail.com>
-	authors = Drew Neil <andrew.jr.neil@gmail.com>
-	authors = Mike Enriquez <mike@enriquez.me>
-	authors = Abdel Saleh <abdel@edgecase.com>
-	authors = Matt Yoho <mby@mattyoho.com>
-	authors = Andy A Maleh <andy@obtiva.com>
-	authors = Jim Weirich <jim@edgecase.com>
-	authors = Scott Barron <scott@edgecase.com>
-	authors = Aaron Christy <aaron@edgecase.com>
+  authors = John Andrews <john.m.andrews@gmail.com>
+  authors = Ken Barker <ken@theedgecase.com>
+  authors = Kevin Farst <kevin@edgecase.com>
+  authors = Felix Flores <felix@edgecase.com>
+  authors = Leon Gersing <fallenrogue@gmail.com>
+  authors = Adam McCrea <adam@edgecase.com>
+  authors = Monica McJunkin <monica@theedgecase.com>
+  authors = Jerry Nummi <jerry@edgecase.com>
+  authors = Joe O'Brien <joe@theedgecase.com>
+  authors = Marc Peabody <marc@edgecase.com>
+  authors = Paul Wilson <paul@edgecase.com>
+  authors = Tony Schneider <tonywok@gmail.com>
+  authors = Drew Neil <andrew.jr.neil@gmail.com>
+  authors = Mike Enriquez <mike@enriquez.me>
+  authors = Abdel Saleh <abdel@edgecase.com>
+  authors = Matt Yoho <mby@mattyoho.com>
+  authors = Andy A Maleh <andy@obtiva.com>
+  authors = Jim Weirich <jim@edgecase.com>
+  authors = Scott Barron <scott@edgecase.com>
+  authors = Aaron Christy <aaron@edgecase.com>
