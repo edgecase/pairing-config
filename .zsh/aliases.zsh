@@ -54,6 +54,7 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias go='git co'
 alias getch='git fetch'
+alias tug='git pull -r'
 
 # cap
 alias plog='cap SERVER=web production slice:tail_environment_logs'
