@@ -7,7 +7,7 @@ alias ll='ls -lF' # long format listing; add / to end of directories
 alias la='ls -aF' # include dot files in listing; add / to end of directories
 alias mv='mv -i' # prompt before moving a file that would overwrite an existing file
 alias watch='watchr ~/.watchr.rb'
-
+alias lop='sudo lsof -i -P | grep -i "listen"' # show open ports
 
 alias icons='cd ~/Pictures/icons; open -a Preview **/*.png **/*.tiff  **/*.jpg'
 alias preview='open -a Preview'
@@ -53,7 +53,6 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias go='git co'
 alias getch='git fetch'
-alias tug='git pull -r origin'
 
 # cap
 alias plog='cap SERVER=web production slice:tail_environment_logs'
