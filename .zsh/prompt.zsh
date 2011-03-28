@@ -32,7 +32,7 @@ function git_author_name() {
 }
 
 function set_ruby_version() {
-  ruby -v  | sed 's/ruby \([0-9]\.[0-9]\.[0-9]\) ([0-9-]* [a-z]* [0-9]*)* \[.*\]*/\1/g'
+  ruby -v  | sed 's/ruby \([0-9]\.[0-9]\.[0-9]p*[0-9]*\) ([0-9-]* [a-z]* [0-9]*)* \[.*\]*/\1/g'
 }
 
 precmd() { 
