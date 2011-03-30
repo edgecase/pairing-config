@@ -1,7 +1,0 @@
-" a more laptop-friendly font size
-  set guifont=Monaco:h15
-
-" don't let folded lines stand out like a sore thumb
-  hi Folded guifg=#8F9D6A guibg=#141414
-
-colors desertex
