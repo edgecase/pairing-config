@@ -1,21 +1,13 @@
-# Setup
+# EdgeCase Pairing Config
 
-## EdgeCase Pairing Machines
+Our collection of dot-files for EdgeCase pairing machines.  Also applicable for individual developer machines.
 
-The following rake task will set up all necessary symbolic links in your home directory:
+## Install
 
-    rake symlink:force
+Just clone the directory somewhere and run `rake`.  This will symlink the necessary
+files to your home directory (asking for permission before clobbering anything).
 
-## Personal Usage
+## What's missing
 
-Aside from .gitconfig, this configuration is not specific to EdgeCase pairing machines.  To use on your personal machine, run the following rake task:
-
-    rake symlink:force
-
-This will forcefully create symlinks for all included configuration files *except* .gitconfig.  If you do not want existing config files to be overwritten, use:
-
-    rake symlink
-
-## Emacs
-
-http://github.com/jimweirich/emacs-setup/tree/master
+There are no Vim or Emacs configs in this repo.  For Vim, check out
+our [vim-config](http://github.com/edgecase/vim-config) repo.

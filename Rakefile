@@ -1,31 +1,22 @@
 require 'rubygems'
 require 'rake'
 
-desc "attempt to symlink all dot files from the current user's home directory"
-task :symlink do
-  symlink(:skip => '.gitconfig')
+desc "symlink all dot files"
+task :default do
+  symlink(Dir.glob('.*') - ['.git', '.gitmodules', '.', '..'])
 end
 
-namespace :symlink do
-  desc "symlink all dot files (including .gitconfig) from the current user's home directory"
-  task :pairing do
-    symlink
-  end
-end
 
-def symlink(options = {})
-  files = Dir.glob('.*') - ['.git', '.gitmodules', '.', '..'] - [options[:skip]]
+def symlink(files)
   files.each do |file|
     case
       when file_identical?(file) then skip_identical_file(file)
       when replace_all_files?    then link_file(file)
       when file_missing?(file)   then link_file(file)
-      else                         prompt_to_link_file(file)
+      else                            prompt_to_link_file(file)
     end
   end
 end
-
-
 
 
 # FILE CHECKS
@@ -44,8 +35,6 @@ end
 def replace_all_files?
   @replace_all == true
 end
-
-
 
 
 # FILE ACTIONS
