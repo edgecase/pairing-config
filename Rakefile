@@ -3,7 +3,26 @@ require 'rake'
 
 desc "symlink all dot files"
 task :default do
-  symlink(Dir.glob('.*') - ['.git', '.gitmodules', '.', '..'])
+  files = Dir.glob('.*') - ['.git', '.gitmodules', '.', '..']
+  symlink files
+
+  # non-pairing machines should not symlink the .gitconfig
+  print "are you on an EdgeCase pairing machine? [yn] "
+
+  if gets.chomp.downcase == 'n' && file_identical?('.gitconfig')
+    directory = File.dirname(__FILE__)
+    sh "rm #{ENV['HOME']}/.gitconfig"
+    sh "cp #{File.join(directory, '.gitconfig')} #{File.join(ENV['HOME'], '.gitconfig')}"
+
+    %w[ name email ].each do |param|
+      current = `git config --global user.#{param}`
+      print "enter your #{param} (leave blank to keep #{current.chomp}): "
+      replacement = gets.chomp
+      unless replacement.empty?
+        sh "git config --global --replace-all user.#{param} '#{replacement}'"
+      end
+    end
+  end
 end
 
 
