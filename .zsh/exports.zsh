@@ -1,4 +1,4 @@
-export PATH=$PATH:/usr/local/bin:/usr/local/sbin:~/Dropbox/pairing/bin
+export PATH=$PATH:/usr/local/bin:/usr/local/sbin:~/Dropbox/pairing/bin:~/bin
 
 export CDPATH=:~/projects
 export RUBYOPT='rubygems -Itest'

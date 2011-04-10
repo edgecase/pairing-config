@@ -1,9 +1,10 @@
 require 'rubygems'
 require 'rake'
 
-desc "symlink all dot files"
+desc "symlink all dot files and bin directory"
 task :default do
   files = Dir.glob('.*') - ['.git', '.gitmodules', '.', '..']
+  files << 'bin'
   symlink files
 
   # non-pairing machines should not symlink the .gitconfig
