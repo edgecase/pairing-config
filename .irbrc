@@ -160,5 +160,16 @@ end
 if $0 == 'irb' && ENV['RAILS_ENV'] 
   require 'logger'
   Object.const_set(:RAILS_DEFAULT_LOGGER, Logger.new(STDOUT))
+
+  def reload_factories!
+    reload!
+    Factory.factories= {}
+    Dir.glob("#{Rails.root}/{test,spec}/factories/*.rb").each { |f| load f }
+
+    # clear out any tables that we have factories for
+    Factory.factories.values.map(&:class_name).uniq.each do |class_name|
+      class_name.to_s.camelize.constantize.delete_all
+    end
+  end
 end
 
