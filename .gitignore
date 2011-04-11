@@ -8,3 +8,4 @@ r.rb
 TAGS
 db/GeoLiteCity.dat
 lib_ext/
+.rvmrc
