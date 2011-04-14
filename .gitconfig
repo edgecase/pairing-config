@@ -1,34 +1,34 @@
 [user]
-name  = Leon Gersing
-email = leon@edgecase.com
+  name  = Leon Gersing
+  email = leon@edgecase.com
 
 [color]
-branch = auto
-diff   = auto
-status = auto
+  branch = auto
+  diff   = auto
+  status = auto
 
 [color "branch"]
-current = yellow reverse
-local   = yellow
-remote  = green
+  current = yellow reverse
+  local   = yellow
+  remote  = green
 
 [color "diff"]
-meta = yellow bold
-frag = magenta bold
-old  = red bold
-new  = green bold
+  meta = yellow bold
+  frag = magenta bold
+  old  = red bold
+  new  = green bold
 
 [color "status"]
-added     = yellow
-changed   = green
-untracked = cyan
+  added     = yellow
+  changed   = green
+  untracked = cyan
 
 [core]
-legacyheaders = false
-excludesfile  = /Users/leon/.gitignore
+  legacyheaders = false
+  excludesfile = /Users/pairing/.gitignore_global
 
 [repack]
-usedeltabaseoffset = true
+  usedeltabaseoffset = true
 
 [alias]
   br   = branch
@@ -73,3 +73,13 @@ usedeltabaseoffset = true
   authors = Jim Weirich <jim@edgecase.com>
   authors = Scott Barron <scott@edgecase.com>
   authors = Aaron Christy <aaron@edgecase.com>
+
+[difftool "Kaleidoscope"]
+[difftool]
+[diff]
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope

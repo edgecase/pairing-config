@@ -60,3 +60,4 @@ alias tug='git pull -r'
 alias plog='cap SERVER=web production slice:tail_environment_logs'
 alias gf='git br -a | grep '
 alias tagit='ctags -R --exclude=.git --exclude=log --exclude=test --exclude=spec *'
+
