@@ -73,6 +73,7 @@
   authors = Jim Weirich <jim@edgecase.com>
   authors = Scott Barron <scott@edgecase.com>
   authors = Aaron Christy <aaron@edgecase.com>
+  authors = Jason Robb <jlrobb@irco.com>
 
 [difftool "Kaleidoscope"]
 [difftool]
