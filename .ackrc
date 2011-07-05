@@ -14,6 +14,7 @@
 --ignore-dir=uploads
 --ignore-dir=images
 --ignore-dir=build
+--ignore-dir=generated
 
 --color
 --follow
