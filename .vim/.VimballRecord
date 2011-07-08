@@ -1,0 +1,1 @@
+html5.vim-0.27.vba: call delete('/Users/pairing/.vim/autoload/htmlcomplete.vim')

@@ -74,6 +74,7 @@
   authors = Scott Barron <scott@edgecase.com>
   authors = Aaron Christy <aaron@edgecase.com>
   authors = Jason Robb <jlrobb@irco.com>
+	authors = Isaac Sanders <isaac@edgecase.com>
 
 [difftool "Kaleidoscope"]
 [difftool]
