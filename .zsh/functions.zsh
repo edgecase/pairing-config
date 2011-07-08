@@ -39,7 +39,7 @@ ack -l $* | xargs mvim -p
 }
 
 function reload! {
-echo Restarting Passenger...
+echo Restarting Passenger and Pow...
 touch tmp/restart.txt
 }
 
