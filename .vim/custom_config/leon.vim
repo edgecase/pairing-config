@@ -14,6 +14,8 @@ vmap <silent> <Leader>aa :Tabularize assignment<CR>
 nmap <silent> <Leader>ah :Tabularize hash<CR>
 vmap <silent> <Leader>ah :Tabularize hash<CR>
 
-:let ruby_no_expensive = 1
+let ruby_no_expensive = 1
 set guifont=Inconsolata:h20
+set hidden
+let g:LustyExplorerSuppressRubyWarning = 1)
 colorscheme rubyblue
