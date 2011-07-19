@@ -6,7 +6,6 @@
 
 --ignore-dir=coverage
 --ignore-dir=doc
---ignore-dir=fixtures
 --ignore-dir=log
 --ignore-dir=system
 --ignore-dir=tmp
