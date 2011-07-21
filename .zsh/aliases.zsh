@@ -27,10 +27,10 @@ alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias devlog='tail -200 -f log/development.log'
 alias log='tail -f log/development.log'
 alias restart='touch tmp/restart.txt'
-alias rc='./script/rails console'
-alias rg='./script/rails generate'
 alias rmate='mate app config doc db features lib public script spec test stories liquid'
-alias rs='./script/rails server'
+alias rs='bundle exec rails s'
+alias rc='bundle exec rails c'
+alias rg='bundle exec rails g'
 alias sc='./script/console'
 alias sg='./script/generate'
 alias sp='./script/spec -cfs'
@@ -38,6 +38,10 @@ alias ss='./script/server'
 alias ssd='./script/server --debugger'
 alias testlog='tail -200 -f log/test.log'
 alias cukelog='tail -200 -f log/cucumber.log'
+
+# Rack 
+
+alias ru='bundle exec rackup config.ru'
 
 # Git
 
