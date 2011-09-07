@@ -24,6 +24,7 @@ alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # Rails
 
+alias be='bundle exec'
 alias devlog='tail -200 -f log/development.log'
 alias log='tail -f log/development.log'
 alias restart='touch tmp/restart.txt'
