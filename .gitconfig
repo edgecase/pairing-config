@@ -1,6 +1,6 @@
 [user]
-	name = Pairing Machine
-	email = pairing@gmail.com
+  name = Pairing Machine
+  email = pairing@gmail.com
 
 [color]
   branch = auto
@@ -77,3 +77,6 @@
   authors = Tony Schneider <tonywok@gmail.com>
   authors = Tyler Wymer <twymer@gmail.com>
   authors = Matt Jones <matt.jones@edgecase.com>
+
+[init]
+  templatedir = ~/.git_template
