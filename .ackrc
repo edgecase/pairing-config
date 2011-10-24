@@ -3,6 +3,7 @@
 --type-add=js=.js.erb,.json
 --type-add=css=.sass,.less,.scss
 --type-set=cucumber=.feature
+--type-set=coffeescript=.coffee
 
 --ignore-dir=coverage
 --ignore-dir=doc
