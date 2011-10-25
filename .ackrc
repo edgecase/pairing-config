@@ -4,6 +4,7 @@
 --type-add=css=.sass,.less,.scss
 --type-set=cucumber=.feature
 --type-set=coffeescript=.coffee
+--type-set=markdown=.markdown,.mdown,.md,.mkd,.mkdn
 
 --ignore-dir=coverage
 --ignore-dir=doc
