@@ -3,6 +3,7 @@ alias c='clear'
 alias cpwd="pwd | ruby -pe'\$_.chomp!' | pbcopy" # copy path to clipboard
 alias grep='grep --color --line-number'
 alias vim='mvim -v' #use mvim version of vim as terminal vim
+alias vi='mvim -v' #use mvim version of vim as terminal vim
 alias gvim='mvim -p'
 alias ll='ls -lF' # long format listing; add / to end of directories
 alias la='ls -alF' # include dot files in listing; add / to end of directories
