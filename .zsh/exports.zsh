@@ -1,4 +1,4 @@
-export PATH=$PATH:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 
 export CDPATH=:~/projects
 export RUBYOPT='rubygems -Itest'
