@@ -4,12 +4,12 @@
 --type-add=css=.sass,.less,.scss
 --type-set=cucumber=.feature
 --type-set=coffeescript=.coffee
---type-set=markdown=.markdown,.mdown,.md,.mkd,.mkdn
+--type-set=markdown=.markdown,.mdown,.md,.mkd,.mkdn,.txt
+--type-set=handlebars=.handlebars,.hbs
 
 --ignore-dir=coverage
 --ignore-dir=doc
 --ignore-dir=log
---ignore-dir=system
 --ignore-dir=tmp
 --ignore-dir=vendor
 --ignore-dir=uploads
