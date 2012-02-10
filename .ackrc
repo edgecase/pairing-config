@@ -16,6 +16,7 @@
 --ignore-dir=images
 --ignore-dir=build
 --ignore-dir=generated
+--ignore-dir=asset-cache
 
 --color
 --follow
