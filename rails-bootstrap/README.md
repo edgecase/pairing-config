@@ -1,64 +1,44 @@
-# Rails Templater
+# Rails Bootstrap
 
-This is a template which allows creating new Ruby on Rails 3 applications quickly using some opinionated defaults. It is inspired by ffmike's [BigOldRailsTemplate](http://github.com/ffmike/BigOldRailsTemplate) Rails 2 template project. To use templater with your Rails apps, use the -m switch when creating your application:
+This is a template which allows creating new Ruby on Rails 3 applications quickly using some opinionated defaults.
 
-After cloning the rails-templater to your hard drive, you can generate a new app like so:
+## Usage
 
-If you want to use Active Record with MySql:
-    rails new application_name -JT -d mysql -m /path/to/rails-templater/templater.rb
-    
-If you want to use Mongo DB with Mongoid:
-    rails new application_name -JOT -m /path/to/rails-templater/templater.rb
+    # Create a new rails project with name app_name in the current directory
+    rails-bootstrap <app_name>
 
-## For use with RVM (recommended)
-
-To have a hermetic gem environment, it is advisable to create a gemset just for your new rails app. To create a new rails app with its own gemset:
-
-* Clone rails-templater to your hard drive
-* Run the bootstrap.rb file with the RVM installed rubie and the name of your app as arguments
-  
-    ruby /path/to/rails-templater/bootstrap.rb [rvm-rubie] [name of new app]
-  
-This will:
-
-* create a new gemset in the RVM rubie you specified and give it the name you chose for your app
-* change into the new gemset (start using it)
-* install the bundler and rails gem into your new gemset
-* run the command to generate a new rails app with the name you picked
-
-Note that the line to generate the new rails app assumes that you want Active Record/MySql. If you intend to use Mongo, then just change the last line in bootstrap.rb from
-  
-    system("rails new #{app_name} -JT -d mysql -m #{template_file}")
-  
-to:
-  
-    system("rails new #{app_name} -JOT -m #{template_file}")
-  
 ## Generated Application
 
-Rails Templater will generate the following:
+Rails bootstrap will generate the following:
 
 ### Ruby on Rails
 
-* Uses [Haml](http://haml-lang.com) as the template engine
-* Uses [Sass](http://sass-lang.com) for generating CSS
+* [Haml](http://haml-lang.com) as the template engine
+* [Sass](http://sass-lang.com) for generating CSS
+* [simple_form](https://github.com/plataformatec/simple_form) for form building
 * [jQuery](http://jquery.com/) for JavaScript over Prototype
-* Optionally uses [Compass](http://compass-style.org) for design with the blueprint/semantic framework
+* [annotate](https://github.com/ctran/annotate_models) for annotating your model files with schema info
+* [simple_enum](https://github.com/lwe/simple_enum) for easy to use enum functionality
 
-## Database
+### Database
 
 * Uses Active Record as the default ORM
-* Optionally uses [Mongoid](http://mongoid.org/) as the Object Document Model
 
-## Testing
+### Testing
 
 * [RSpec](http://github.com/rspec/rspec) for testing
 * [factory_girl](http://github.com/thoughtbot/factory_girl) for fixture replacement
-* [remarkable](http://github.com/remarkable/remarkable) for ActiveModel RSpec matchers
-* Optionally uses [Cucumber](http://github.com/aslakhellesoy/cucumber-rails) for integration tests
-    
-## Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Send me a pull request. Bonus points for topic branches.
+* [Cucumber](http://github.com/aslakhellesoy/cucumber-rails) for integration tests
+
+### Smart Defaults
+
+* No generation of view, controller, route specs from scaffolding
+* No generation of css or helpers from scaffolding
+
+### Optionally installed
+
+* [compass](http://compass-style.org) for awesome css development
+* [devise](https://github.com/plataformatec/devise) for super easy authentication
+* [pry](https://github.com/pry/pry) rails console and debugger replacement
+* [vcr](https://github.com/myronmarston/vcr) for record / playback of external web requests
+* Disable coffee script
