@@ -41,7 +41,7 @@ alias ssd='./script/server --debugger'
 alias testlog='tail -200 -f log/test.log'
 alias cukelog='tail -200 -f log/cucumber.log'
 
-# Rack 
+# Rack
 
 alias ru='bundle exec rackup config.ru'
 
@@ -65,3 +65,5 @@ alias tug='git pull -r origin'
 # cap
 alias plog='cap SERVER=web production slice:tail_environment_logs'
 alias gf='git br -a | grep '
+
+alias rails-bootstrap='ruby ~/rails-bootstrap/rails-bootstrap.rb'
