@@ -22,13 +22,15 @@ Rails bootstrap will generate the following:
 
 ### Database
 
-* Uses Active Record as the default ORM
+* Uses Active Record as the default ORM against sqllite
 
 ### Testing
 
 * [RSpec](http://github.com/rspec/rspec) for testing
 * [factory_girl](http://github.com/thoughtbot/factory_girl) for fixture replacement
 * [Cucumber](http://github.com/aslakhellesoy/cucumber-rails) for integration tests
+* [Capybara](https://github.com/jnicklas/capybara) for headless driving if integration tests
+* [Capybara-webkit](https://github.com/thoughtbot/capybara-webkit) for integration testing of javascript
 
 ### Smart Defaults
 
