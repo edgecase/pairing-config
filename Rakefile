@@ -3,7 +3,7 @@ require 'rake'
 
 desc "symlink all dot files and bin directory"
 task :default do
-  files = Dir.glob('.*') - ['.git', '.gitmodules', '.', '..']
+  files = Dir.glob('.*') - ['.git', '.gitmodules', '.DS_Store', '.', '..']
   files << 'bin'
   symlink_files files
 
