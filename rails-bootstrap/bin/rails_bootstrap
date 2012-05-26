@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
+require 'rails_bootstrap'
+
+app_name = ARGV.shift
+
+if app_name && !app_name.match(/^-.*$/)
+  options = OptParser.parse(ARGV)
+  command = options[:use_rvm] ? RailsBootstrap::RvmBootstrapper : RailsBootstrap::Bootstrapper
+  command.new(app_name, options[:template]).run
+else
+  puts "\n The first arg to this command should be the name of your new rails app."
+end
+
