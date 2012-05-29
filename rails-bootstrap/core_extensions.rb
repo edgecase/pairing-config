@@ -1,7 +1,8 @@
 module Rails
   module Generators
     module Actions
-      RECIPES_PATH = '/Users/urfolomeus/workspaces/ruby/pairing-config/rails-bootstrap/recipes/'
+      RECIPES_ROOT = '/Users/urfolomeus/workspaces/ruby/pairing-config/rails-bootstrap/recipes/'
+      TEMPLATES_ROOT = File.join(RECIPES_ROOT, '..', 'templates')
 
       def bootstrap(required, optional=[])
         recipes = compile_recipe_list(required, optional)
@@ -49,6 +50,33 @@ module Rails
         @after_bundler[delay] << (p || block)
       end
 
+      def after_readme(&block)
+        @after_readme ||= []
+        @after_readme << block
+      end
+
+      def add_view(source, destination)
+        get(
+          File.join(TEMPLATES_ROOT, 'views', source),
+          File.join('app', 'views', destination)
+        )
+      end
+
+      def add_generator(name)
+        get(
+          File.join(TEMPLATES_ROOT, 'generators', "#{name}_generator.rb"),
+          File.join('lib', 'generators', "#{name}_generator.rb")
+        )
+      end
+
+      def add_to_readme(section, text)
+        after_readme do
+          inject_into_file 'README.md', :after => "## #{section}\n\n" do
+            "#{text}\n\n"
+          end
+        end
+      end
+
       def execute_recipes(recipes)
         recipes.each do |recipe|
           execute_recipe(recipe)
@@ -56,7 +84,7 @@ module Rails
       end
 
       def execute_recipe(recipe)
-        recipe = File.join(RECIPES_PATH, recipe) unless recipe.include?(RECIPES_PATH)
+        recipe = File.join(RECIPES_ROOT, recipe) unless recipe.include?(RECIPES_ROOT)
         apply recipe
       end
 
@@ -65,7 +93,7 @@ module Rails
       end
 
       def recipes_in(dirname)
-        recipe_path = File.join(RECIPES_PATH, dirname)
+        recipe_path = File.join(RECIPES_ROOT, dirname)
         enumerate_recipes(recipe_path)
       end
 

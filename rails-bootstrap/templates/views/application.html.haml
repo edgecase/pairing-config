@@ -1,0 +1,24 @@
+!!! html5
+%html
+  %head
+    %title
+      - if content_for(:title).present?
+        #{content_for :title} - #{Rails.application.class.parent_name}
+    = csrf_meta_tag
+    = stylesheet_link_tag :application
+    = javascript_include_tag :application
+  %body
+    %header.primary
+      .content
+        %h1= link_to "Home", root_path
+    %div.main
+      %div.content
+        - unless flash.empty?
+          %p.flash
+            - flash.each do |k, v|
+              %strong{class: k}= v
+        = yield
+    %footer.primary
+      %div.content
+        %p.copyright &copy; #{Date.today.year}
+
