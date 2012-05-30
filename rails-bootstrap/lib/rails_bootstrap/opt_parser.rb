@@ -2,7 +2,7 @@ require 'optparse'
 
 class OptParser
   ROOT_DIR = File.join(File.dirname(__FILE__), '..', '..')
-  TEMPLATES_DIR = File.join(ROOT_DIR)
+  TEMPLATES_DIR = File.join(ROOT_DIR, 'templates')
 
   DEFAULT_OPTIONS = {
     use_rvm: true,

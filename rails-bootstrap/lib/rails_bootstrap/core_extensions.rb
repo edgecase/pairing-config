@@ -3,6 +3,7 @@ module Rails
     module Actions
       RECIPES_ROOT = '/Users/urfolomeus/workspaces/ruby/pairing-config/rails-bootstrap/recipes/'
       TEMPLATES_ROOT = File.join(RECIPES_ROOT, '..', 'templates')
+      FILES_ROOT = File.join(RECIPES_ROOT, '..', 'files')
 
       def bootstrap(required, optional=[])
         recipes = compile_recipe_list(required, optional)
@@ -52,14 +53,14 @@ module Rails
 
       def add_view(source, destination)
         get(
-          File.join(TEMPLATES_ROOT, 'views', source),
+          File.join(FILES_ROOT, 'views', source),
           File.join('app', 'views', destination)
         )
       end
 
       def add_generator(name)
         get(
-          File.join(TEMPLATES_ROOT, 'generators', "#{name}_generator.rb"),
+          File.join(FILES_ROOT, 'generators', "#{name}_generator.rb"),
           File.join('lib', 'generators', "#{name}_generator.rb")
         )
       end

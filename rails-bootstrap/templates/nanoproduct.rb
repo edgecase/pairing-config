@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), 'lib', 'rails_bootstrap', 'core_extensions')
+require File.join(File.dirname(__FILE__), '..', 'lib', 'rails_bootstrap', 'core_extensions')
 
 required = [
   'check_rails_version',
