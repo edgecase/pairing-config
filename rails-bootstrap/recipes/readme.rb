@@ -1,7 +1,8 @@
+# builds a markdown version of the README
+# the removal of the RDoc version is done in the cleanup recipe
 after_bundler 9 do
   say "Building README ...", :yellow
 
-  run 'rm README.rdoc'
   get File.join(TEMPLATES_ROOT, 'README.md'), 'README.md'
   @after_readme.each {|b| b.call}
 

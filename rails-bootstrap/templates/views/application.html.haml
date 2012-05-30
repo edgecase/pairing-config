@@ -1,9 +1,7 @@
 !!! html5
-%html
+%html{html_attrs}
   %head
-    %title
-      - if content_for(:title).present?
-        #{content_for :title} - #{Rails.application.class.parent_name}
+    %title content_for(:title) || #{app_name}
     = csrf_meta_tag
     = stylesheet_link_tag :application
     = javascript_include_tag :application
@@ -13,10 +11,8 @@
         %h1= link_to "Home", root_path
     %div.main
       %div.content
-        - unless flash.empty?
-          %p.flash
-            - flash.each do |k, v|
-              %strong{class: k}= v
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_\#{name}"
         = yield
     %footer.primary
       %div.content
