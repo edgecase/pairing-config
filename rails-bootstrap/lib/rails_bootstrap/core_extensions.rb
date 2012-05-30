@@ -75,13 +75,13 @@ module Rails
 
       def execute_recipes(recipes)
         recipes.each do |recipe|
-          recipe_path = File.join(RECIPES_ROOT, "#{recipe}.rb")
-          execute_recipe(recipe_path)
+          execute_recipe(recipe)
         end
       end
 
       def execute_recipe(recipe)
         recipe = File.join(RECIPES_ROOT, recipe) unless recipe.include?(RECIPES_ROOT)
+        recipe << ".rb" unless recipe.include?(".rb")
         apply recipe
       end
 
