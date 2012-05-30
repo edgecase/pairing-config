@@ -87,17 +87,6 @@ module Rails
       def execute_strategies
         @after_bundler.keys.sort.map {|k| @after_bundler[k]}.flatten.each {|strategy| strategy.call }
       end
-
-      def recipes_in(dirname)
-        recipe_path = File.join(RECIPES_ROOT, dirname)
-        enumerate_recipes(recipe_path)
-      end
-
-      def enumerate_recipes(recipe_path)
-        Dir.entries(recipe_path).
-          map    {|f| File.join(recipe_path, f) }.
-          select {|f| File.file?(f)}
-      end
     end
   end
 end
