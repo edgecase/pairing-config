@@ -1,8 +1,13 @@
 module RailsBootstrap
   module Actions
-    def yes?(message)
+    def ask?(message)
       puts message
-      STDIN.gets.chomp.downcase[0] == 'y'
+      STDIN.gets.chomp
+    end
+
+    def yes?(message)
+      result = ask? message
+      result.downcase[0] == 'y'
     end
   end
 end

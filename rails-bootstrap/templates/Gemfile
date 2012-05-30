@@ -25,4 +25,3 @@ end
 
 gem 'jquery-rails'
 gem 'simple_enum'
-
