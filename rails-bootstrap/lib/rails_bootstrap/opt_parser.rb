@@ -20,7 +20,9 @@ class OptParser
       end
 
       opts.on('-t', '--template [FILENAME]', "Template") do |t|
-        options[:template] = t
+        template = File.join(TEMPLATES_DIR, t) unless t.include?(TEMPLATES_DIR)
+        template << ".rb" unless template.include?(".rb")
+        options[:template] = template
       end
     end.parse!
 

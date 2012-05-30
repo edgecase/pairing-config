@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), 'core_extensions.rb')
+require File.join(File.dirname(__FILE__), 'lib', 'rails_bootstrap', 'core_extensions')
 
 required = [
   'check_rails_version',
@@ -22,6 +22,11 @@ required = [
 optional = [
   'error_reporting'
 ]
+
+# hack to overide bundler running by default at the end of the process since
+# we already ran it...
+def run_bundle
+end
 
 bootstrap(required, optional)
 
