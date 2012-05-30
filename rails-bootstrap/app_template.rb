@@ -20,7 +20,7 @@ optional = [
   'pry',
   'thin',
   'vcr'
-].map{|r| File.join(RECIPES_ROOT, 'optional', "#{r}.rb")}
+].map{|r| File.join(RECIPES_ROOT, "#{r}.rb")}
 
 bootstrap(required, optional)
 
