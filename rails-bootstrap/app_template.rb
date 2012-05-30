@@ -2,15 +2,15 @@ require File.join(File.dirname(__FILE__), 'core_extensions.rb')
 
 required = [
   'application',
-  'cleanup',
+  'standard_gems',
+  'rspec',
   'cucumber',
   'factory_girl',
-  'gem',
-  'gitignore',
   'haml',
-  'rspec',
-  'simple_form'
-].map{|r| File.join(RECIPES_ROOT, 'required', "#{r}.rb")}
+  'simple_form',
+  'gitignore',
+  'cleanup'
+].map{|r| File.join(RECIPES_ROOT, "#{r}.rb")}
 
 optional = [
   'compass',
