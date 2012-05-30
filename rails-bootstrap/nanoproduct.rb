@@ -17,7 +17,7 @@ required = [
   'leftovers',
   'readme',
   'heroku'
-].map{|r| File.join(RECIPES_ROOT, "#{r}.rb")}
+]
 
 optional = [
   'error_reporting'

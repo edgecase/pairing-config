@@ -10,7 +10,7 @@ required = [
   'simple_form',
   'gitignore',
   'cleanup'
-].map{|r| File.join(RECIPES_ROOT, "#{r}.rb")}
+]
 
 optional = [
   'compass',
@@ -20,7 +20,7 @@ optional = [
   'pry',
   'thin',
   'vcr'
-].map{|r| File.join(RECIPES_ROOT, "#{r}.rb")}
+]
 
 bootstrap(required, optional)
 

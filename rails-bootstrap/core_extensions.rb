@@ -79,7 +79,8 @@ module Rails
 
       def execute_recipes(recipes)
         recipes.each do |recipe|
-          execute_recipe(recipe)
+          recipe_path = File.join(RECIPES_ROOT, "#{recipe}.rb")
+          execute_recipe(recipe_path)
         end
       end
 
