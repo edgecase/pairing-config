@@ -21,9 +21,11 @@ module Rails
         rake "db:test:prepare"
 
         # commit to git
+        repo = "git@github.com:edgecase/#{app_name}.git"
         git :init
         git :add => "."
         git :commit => "-a -m 'create initial application'"
+        git :remote => "add origin #{repo}"
 
         say <<-eos
           ============================================================================
