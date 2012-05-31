@@ -14,6 +14,6 @@ You can run any of the recipes after the fact by running
 rails g recipe <recipe_name> # minus the file extension i.e. rails g recipe haml
 ```
 
-Available recipes can be found in #{RECIPES_ROOT}
+Available recipes can be found in https://github.com/edgecase/pairing-config/tree/master/rails-bootstrap/recipes
 }
 
