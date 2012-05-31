@@ -10,6 +10,7 @@ required = [
   'haml',
   'simple_form',
   'readme',
+  'git',
   'gitignore',
   'cleanup',
 ]

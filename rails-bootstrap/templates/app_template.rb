@@ -8,6 +8,7 @@ required = [
   'factory_girl',
   'haml',
   'simple_form',
+  'git',
   'gitignore',
   'cleanup'
 ]

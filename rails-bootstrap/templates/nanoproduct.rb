@@ -16,6 +16,8 @@ required = [
   'file_upload',
   'leftovers',
   'readme',
+  'git',
+  'gitignore',
   'heroku'
 ]
 
