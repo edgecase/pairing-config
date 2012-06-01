@@ -18,6 +18,7 @@ required = [
 optional = [
   'compass',
   'cucumber',
+  'shoulda_matchers',
   'devise',
   'disable-coffeescript',
   'postgres',

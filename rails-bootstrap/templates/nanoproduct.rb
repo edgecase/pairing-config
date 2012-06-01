@@ -22,6 +22,7 @@ required = [
 ]
 
 optional = [
+  'shoulda_matchers',
   'error_reporting'
 ]
 
