@@ -10,3 +10,6 @@ db/GeoLiteCity.dat
 lib_ext/
 .rvmrc
 .zsh/custom.zsh
+*.sublime-project
+*.sublime-workspace
+
