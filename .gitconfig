@@ -77,6 +77,8 @@
   authors = Tony Schneider <tonywok@gmail.com>
   authors = Tyler Wymer <twymer@gmail.com>
   authors = Matt Jones <matt.jones@edgecase.com>
+	authors = Alex Burkhart <saterus@gmail.com>
+	authors = John Andrews <john@edgecase.com>
 
 [init]
   templatedir = ~/.git_template
