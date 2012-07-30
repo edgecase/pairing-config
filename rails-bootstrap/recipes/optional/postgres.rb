@@ -1,8 +1,8 @@
 gem 'pg'
 
-host = ask?("What is your datbase host? [localhost]")
+host = ask("What is your datbase host? [localhost]")
 host = "localhost" if host.blank?
-database = ask?("What is the name of the database? [#{app_name}]")
+database = ask("What is the name of the database? [#{app_name}]")
 database = app_name if database.blank?
 
 after_bundler do
