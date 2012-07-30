@@ -1,5 +1,5 @@
---type-add=ruby=.haml,.rake,.rsel,.builder
---type-add=html=.html.erb,.html.haml
+--type-add=ruby=.haml,.rake,.rsel,.builder,.slim
+--type-add=html=.html.erb,.haml,.slim
 --type-add=js=.js.erb,.json
 --type-add=css=.sass,.less,.scss
 --type-set=cucumber=.feature
