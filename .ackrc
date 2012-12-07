@@ -17,6 +17,7 @@
 --ignore-dir=build
 --ignore-dir=generated
 --ignore-dir=asset-cache
+--ignore-dir=node_modules
 
 --color
 --follow

@@ -5,6 +5,8 @@ export RUBYOPT='rubygems -Itest'
 export GIT_EDITOR="mvim -v" # use mvim version of vim as git editor
 export EDITOR="mvim"
 export JAVA_HOME='/System/Library/Frameworks/JavaVM.framework/Home'
+export PGDATA='/usr/local/var/postgres'
+
 if [[ $TERM != 'dumb' ]]; then
   export TERM=xterm-color;
 fi

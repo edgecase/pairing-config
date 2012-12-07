@@ -1,6 +1,6 @@
 [user]
-  name = Pairing Machine
-  email = pairing@edgecase.com
+	name = Edgecase Pairing
+	email = pairing@edgecase.com
 
 [color]
   branch = auto
@@ -29,6 +29,8 @@
 [core]
   legacyheaders = false
   excludesfile  = /Users/pairing/.gitignore
+	autocrlf = input
+	safecrlf = true
 
 [repack]
   usedeltabaseoffset = true
@@ -79,6 +81,7 @@
   authors = Matt Jones <matt.jones@edgecase.com>
 	authors = Alex Burkhart <saterus@gmail.com>
 	authors = John Andrews <john@edgecase.com>
+	authors = Delisa Mason <iskanamagus@gmail.com>
 
 [init]
   templatedir = ~/.git_template

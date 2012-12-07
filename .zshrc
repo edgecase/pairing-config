@@ -14,3 +14,9 @@ source ~/.zsh/set_options.zsh
 if [[ -s ~/.zsh/custom.zsh ]] ; then source ~/.zsh/custom.zsh ; fi
 
 if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:/usr/local/share/npm/bin
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
