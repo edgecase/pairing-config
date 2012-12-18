@@ -71,6 +71,6 @@ alias rails-bootstrap='ruby ~/rails-bootstrap/rails-bootstrap.rb'
 
 # history
 alias sudo='sudo ' # allow running sudo against an alias
-alias redo='`cat $HOME/.zsh_history | tail -n2 | head -n1`' # run last command again
+alias redo='`\history -n | tail -n1`' # run last command again
 alias now='sudo redo' # I meant sudo on that last command
 
