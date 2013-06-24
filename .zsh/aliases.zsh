@@ -48,7 +48,7 @@ alias ru='bundle exec rackup config.ru'
 
 # Git
 
-alias gitrm='git ls-files --deleted | xargs git rm'
+alias gitrm='git ls-files -z --deleted | xargs -0 git rm'
 alias gitx='gitx --all'
 alias gpci='git-pair commit'
 alias gp='git pair'
