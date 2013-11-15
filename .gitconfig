@@ -68,6 +68,7 @@
   authors = Matt Jones <matt.jones@neo.com>
   authors = Alex Burkhart <saterus@gmail.com>
   authors = John Andrews <john@neo.com>
+  authors = Kris Hedges <kris.hedges@neo.com>
 
 [init]
   templatedir = ~/.git_template
