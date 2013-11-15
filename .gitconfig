@@ -58,30 +58,16 @@
   merge = refs/heads/master
 
 [git-pair]
-  authors = Aaron Christy <aaron@edgecase.com>
-  authors = Adam McCrea <adam@edgecase.com>
-  authors = Andrew Grieser <andrew@edgecase.com>
-  authors = Felix Flores <felix@edgecase.com>
-  authors = Jerry Nummi <jerry@edgecase.com>
-  authors = Jim Weirich <jim@edgecase.com>
-  authors = Joe O'Brien <joe@theedgecase.com>
-  authors = Ken Barker <ken@theedgecase.com>
-  authors = Leon Gersing <leongersing@gmail.com>
-  authors = Marc Peabody <marc@edgecase.com>
-  authors = Matt Darby <matt.darby@edgecase.com>
-  authors = Matt Yoho <mby@mattyoho.com>
-  authors = Matthew Boston <matthew.boston@edgecase.com>
-  authors = Mike Enriquez <mike@enriquez.me>
-  authors = Monica McJunkin <monica@theedgecase.com>
-  authors = Paul Wilson <paul@edgecase.com>
-  authors = Scott Barron <scott@edgecase.com>
-  authors = Scott Walker <scott.walker@edgecase.com>
+  authors = Aaron Christy <aaron@neo.com>
+  authors = Felix Flores <felix@neo.com>
+  authors = Jerry Nummi <jerry@neo.com>
+  authors = Jim Weirich <jim@neo.com>
+  authors = Ken Barker <ken@theneo.com>
+  authors = Paul Wilson <paul@neo.com>
   authors = Tony Schneider <tonywok@gmail.com>
-  authors = Tyler Wymer <twymer@gmail.com>
-  authors = Matt Jones <matt.jones@edgecase.com>
-	authors = Alex Burkhart <saterus@gmail.com>
-	authors = John Andrews <john@edgecase.com>
-	authors = Delisa Mason <iskanamagus@gmail.com>
+  authors = Matt Jones <matt.jones@neo.com>
+  authors = Alex Burkhart <saterus@gmail.com>
+  authors = John Andrews <john@neo.com>
 
 [init]
   templatedir = ~/.git_template
