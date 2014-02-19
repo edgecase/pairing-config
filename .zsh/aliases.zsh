@@ -61,6 +61,7 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias go='git co'
 alias getch='git fetch'
+alias resolve='vim -p $(git diff --name-only --diff-filter=U | xargs)'
 alias tug='git pull -r origin'
 
 # cap
