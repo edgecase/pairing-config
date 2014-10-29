@@ -59,16 +59,16 @@
 
 [git-pair]
   authors = Aaron Christy <aaron@neo.com>
+  authors = Aaron Specht Baker <aaron.baker@neo.com>
   authors = Felix Flores <felix@neo.com>
   authors = Jerry Nummi <jerry@neo.com>
-  authors = Jim Weirich <jim@neo.com>
-  authors = Ken Barker <ken@theneo.com>
-  authors = Paul Wilson <paul@neo.com>
+  authors = Chandu Tennety <chandu@neo.com>
+  authors = Chris Westra <chris.westra@neo.com>
+  authors = Scott Walker <scott.walker@neo.com>
   authors = Tony Schneider <tonywok@gmail.com>
-  authors = Matt Jones <matt.jones@neo.com>
+  authors = Ryan Stocker <ryan.stocker@neo.com>
   authors = Alex Burkhart <saterus@gmail.com>
-  authors = John Andrews <john@neo.com>
-  authors = Kris Hedges <kris.hedges@neo.com>
+  authors = James Martinez <james@neo.com>
 
 [init]
   templatedir = ~/.git_template
