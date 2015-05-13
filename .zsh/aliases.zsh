@@ -75,3 +75,7 @@ alias sudo='sudo ' # allow running sudo against an alias
 alias redo='`\history -n | tail -n1`' # run last command again
 alias now='sudo redo' # I meant sudo on that last command
 
+
+# Show and hide hidden files
+alias show-hidden-files='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder'
+alias hide-hidden-files='defaults write com.apple.finder AppleShowAllFiles NO && killall Finder'
