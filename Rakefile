@@ -12,8 +12,8 @@ task :default do
 
   if gets.chomp.downcase == 'n' && file_identical?('.gitconfig')
     directory = File.dirname(__FILE__)
-    sh "rm #{ENV['HOME']}/.gitconfig"
-    sh "cp #{File.join(directory, '.gitconfig')} #{File.join(ENV['HOME'], '.gitconfig')}"
+    sh "rm '#{ENV['HOME']}/.gitconfig'"
+    sh "cp '#{File.join(directory, '.gitconfig')}' '#{File.join(ENV['HOME'], '.gitconfig')}'"
 
     %w[ name email ].each do |param|
       current = `git config --global user.#{param}`
@@ -74,11 +74,11 @@ end
 def link_file(file)
   puts " => symlinking #{file}"
   directory = File.dirname(__FILE__)
-  sh("ln -s #{File.join(directory, file)} #{ENV['HOME']}/#{file}")
+  sh("ln -s '#{File.join(directory, file)}' '#{ENV['HOME']}/#{file}'")
 end
 
 def replace_file(file)
-  sh "rm -rf #{ENV['HOME']}/#{file}"
+  sh "rm -rf '#{ENV['HOME']}/#{file}'"
   link_file(file)
 end
 
