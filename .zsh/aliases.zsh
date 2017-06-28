@@ -13,7 +13,6 @@ alias lop='sudo lsof -i -P | grep -i "listen"' # show open ports
 
 alias icons='cd ~/Pictures/icons; open -a Preview **/*.png **/*.tiff  **/*.jpg'
 alias preview='open -a Preview'
-alias bwm='cd ~/projects/buywithme'
 
 # Databses
 
